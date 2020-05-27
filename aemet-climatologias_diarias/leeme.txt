@@ -1,2 +1,0 @@
-,lgunas estaciones no tienen el periodo completo 1993-2016 (Guennes,Lekeito). 
-,ueden tener huecos en la serie temporal.
