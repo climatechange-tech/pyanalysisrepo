@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for year in $(seq 1994 2015)
+do
+    ls $year*csv > $year.txt
+done
+
+for year in $(seq 1994 2015)
+do
+    wc -l $year.txt >> years_files.txt
+done
