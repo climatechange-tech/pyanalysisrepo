@@ -1,0 +1,10 @@
+#! /bin/bash
+
+
+for iyear in $(seq 1993 2016)
+    do
+    for imon in $(seq -f "%02g" 1 12)
+        do
+            mv "era5_Spain_T_Td_ws_${iyear}${imon}.nc" "era5Land_Spain_T_Td_ws_${iyear}${imon}.nc"
+    done
+done
