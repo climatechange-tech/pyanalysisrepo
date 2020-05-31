@@ -108,7 +108,6 @@ yT_min=yT_min[np.logical_not(np.isnan(yT_min))]
 slope1,intercept1,r1,p1,stderr1=ss.linregress(xT_max,yT_max)
 slope2,intercept2,r2,p2,stderr2=ss.linregress(xT_min,yT_min)
 
-print("Zumaia\n----------------")
 
 print("\nTendencia Tmax Zumaia\n=====================================\n")
 
@@ -129,7 +128,7 @@ print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: 
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 
 print("\nTreshold Tmin Zumaia ==> threshold Tmax Zumaia ERA5Land\n===================================================================\n")
-print("%i ºC ==> %7.2f ºC" %(thres_min,thres_era5L_min))
+print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
 
 
 #####################

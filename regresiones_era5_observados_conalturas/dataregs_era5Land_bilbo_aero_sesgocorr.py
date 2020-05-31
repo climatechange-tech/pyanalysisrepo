@@ -197,8 +197,6 @@ slope4,intercept4,r4,p4,stderr4=ss.linregress(xws,yws)
 if np.all(np.isnan(ss.linregress(xT,yT))) or np.all(np.isnan(ss.linregress(xT_max,yT_max))) or np.all(np.isnan(ss.linregress(xT_min,yT_min))) or np.all(np.isnan(ss.linregress(xws,yws))) == True :
     raise ValueError("Kontuz! Matrizeetako bat(zu)ek nan balioa dutenentz behatu")
 
-print("Aeropuerto de Bilbo\n----------------\n")
-
 print("\nTendencia T Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de T entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
@@ -222,10 +220,10 @@ thres_bilbo_era5L_max = intercept2 + slope2*thres_bilbo_max
 thres_bilbo_era5L_min = intercept3 + slope3*thres_bilbo_min
 
 print("\nTreshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
-print("%i ==> %7.2f" %(thres_bilbo_max,thres_bilbo_era5L_max))
+print("%i ºC ==> %7.2f ºC" %(thres_bilbo_max,thres_bilbo_era5L_max))
 
 print("\nTreshold Tmin Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
-print("%i ==> %7.2f" %(thres_bilbo_min,thres_bilbo_era5L_min))
+print("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min))
 
 
 #####################
