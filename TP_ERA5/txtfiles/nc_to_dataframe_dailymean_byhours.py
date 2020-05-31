@@ -46,7 +46,7 @@ for i in range(24):
 #Gautegiz-Arteaga
 #################
 
-gar_era5_txtfiles=glob.glob("../txtfiles/era5*ARTEAGA*.txt")
+gar_era5_txtfiles=glob.glob("*ARTEAGA*.txt")
 gar_era5_txtfiles.sort()
 
 th=os.times()[-1]
@@ -87,7 +87,7 @@ for ilev in range(len(gar_era5_oneday)):
 #Aeropuerto de Madrid
 #####################
 
-cv_era5_txtfiles=glob.glob("../txtfiles/era5*MADRID*.txt")
+cv_era5_txtfiles=glob.glob("*MADRID*.txt")
 cv_era5_txtfiles.sort()
 
 shapes=[]
