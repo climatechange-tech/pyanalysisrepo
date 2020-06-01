@@ -109,7 +109,10 @@ df_comp.values[:,1:]=df_comp.values[:,1:].astype(np.float64)
 
 ldfc=len(df_comp)
 
-h_lek=12
+ifile_z="geopotential_ERA5Land_txtfiles/geopotential_cities.txt"
+z=lectura_datos(ifile_z)
+h_lek=z[2,1].astype(np.float64)
+
 
 xT_max=tempcorr_obs(df_comp.tmax.values.astype(np.float64),h_lek)
 yT_max=df_comp.tmax_era5L.values.astype(np.float64)

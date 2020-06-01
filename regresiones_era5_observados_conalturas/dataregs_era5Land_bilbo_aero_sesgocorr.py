@@ -163,7 +163,9 @@ for irow in range(ldfb1):
 #Normalizar los datos observados a 2m
 #####################################
 
-h_bilbo=42
+ifile_z="geopotential_ERA5Land_txtfiles/geopotential_cities.txt"
+z=lectura_datos(ifile_z)
+h_bilbo=z[0,1].astype(np.float64)
 
 xT=tempcorr_obs(df_bilbo1.tmed.values.astype(np.float64),h_bilbo)
 yT=df_bilbo1.T_2m.values.astype(np.float64)

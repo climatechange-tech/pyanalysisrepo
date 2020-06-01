@@ -18,7 +18,7 @@ set xlabel "{/=14 AEMET observed temperature ({/Symbol \260}C)}"
 set ylabel "{/=14 ERA5 LAND temperature ({/Symbol \260}C)}"
 
 set label at graph 0.6,0.35 "{/:Bold r_{Tmax} = 0.98}"
-set label at graph 0.1,0.88 "{/:Bold 32.9 ({/Symbol \260}C)}"
+set label at graph 0.1,0.90 "{/:Bold 32.9 ({/Symbol \260}C)}"
 set label at graph 0.8,0.1 "{/:Bold 35 ({/Symbol \260}C)}"
 
 set arrow front from 35, graph 0 to 35, graph 1 nohead lw 2
@@ -43,7 +43,7 @@ unset label
 set xlabel "{/=14 AEMET observed temperature ({/Symbol \260}C)}"
 set ylabel "{/=14 ERA5 LAND temperature ({/Symbol \260}C)}"
 
-set label at graph 0.6,0.25 "{/:Bold r_{Tmin} = 0.96}"
+set label at graph 0.57,0.28 "{/:Bold r_{Tmin} = 0.96}"
 set label at graph 0.1,0.82 "{/:Bold 17.2 ({/Symbol \260}C)}"
 set label at graph 0.78,0.1 "{/:Bold 17 ({/Symbol \260}C)}"
 
