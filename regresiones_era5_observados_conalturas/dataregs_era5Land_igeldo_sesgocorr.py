@@ -108,7 +108,7 @@ df_comp.values[:,1:]=df_comp.values[:,1:].astype(np.float64)
 
 ldfc=len(df_comp)
 
-ifile_z="geopotential_ERA5Land_txtfiles/geopotential_cities.txt"
+ifile_z="geopotential_ERA5Land_txtfiles/geopotential_to_z_cities.txt"
 z=lectura_datos(ifile_z)
 h_igeldo=z[4,1].astype(np.float64)
 

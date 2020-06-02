@@ -26,7 +26,7 @@ latlondict={"BILBAO_AEROPUERTO":              [-2.5423,43.1753],\
 
 cities=latlondict.keys()
 
-ofile=open("geopotential_cities.txt",'w')
+ofile=open("geopotential_to_z_cities.txt",'w')
 
 if len(times)==1:
     for city in cities:

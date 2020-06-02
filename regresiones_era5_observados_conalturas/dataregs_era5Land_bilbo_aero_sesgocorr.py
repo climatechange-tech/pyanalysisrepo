@@ -163,7 +163,7 @@ for irow in range(ldfb1):
 #Normalizar los datos observados a 2m
 #####################################
 
-ifile_z="geopotential_ERA5Land_txtfiles/geopotential_cities.txt"
+ifile_z="geopotential_ERA5Land_txtfiles/geopotential_to_z_cities.txt"
 z=lectura_datos(ifile_z)
 h_bilbo=z[0,1].astype(np.float64)
 
