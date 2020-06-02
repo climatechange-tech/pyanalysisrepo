@@ -21,7 +21,7 @@ set label at graph 0.68,0.4 "{/:Bold r_{Tmax} = 0.93}"
 set label at graph 0.1,0.8 "{/:Bold 29.4 ({/Symbol \260}C)}"
 set label at graph 0.78,0.1 "{/:Bold 30 ({/Symbol \260}C)}"
 
-set arrow front from 35, graph 0 to 35, graph 1 nohead lw 2
+set arrow front from 30, graph 0 to 30, graph 1 nohead lw 2
 
 ymax(x)=A+B*x
 

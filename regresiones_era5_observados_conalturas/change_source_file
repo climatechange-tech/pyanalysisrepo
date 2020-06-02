@@ -1,0 +1,10 @@
+#! /bin/bash
+
+for file in *sesgocorr_zg0*py
+do
+   vim -E -s $file << EOF
+   :%s/geopotential_ERA5Land_txtfiles/geopotential_ERA5_txtfiles
+   :wq
+EOF
+done
+

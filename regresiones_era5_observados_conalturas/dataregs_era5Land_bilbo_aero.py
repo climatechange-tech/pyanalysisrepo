@@ -185,11 +185,11 @@ print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
 
 print("\nTendencia Tmin Aeropuerto de Bilbo\n=====================================\n")
-print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept3,slope3))
+print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 
 print("\nTendencia wspeed Aeropuerto de Bilbo\n=====================================\n")
-print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
+print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept4,slope4))
 print("Coeficiente de correlacion y determinacion de ws entre aemet-era5Land: %5.2f, %5.2f" %(r4,r4**2))
 
 thres_bilbo_max=35
@@ -201,7 +201,7 @@ thres_bilbo_era5L_min = intercept3 + slope3*thres_bilbo_min
 print("\nTreshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC" %(thres_bilbo_max,thres_bilbo_era5L_max))
 
-print("\nTreshold Tmin Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
+print("\nTreshold Tmin Aeropuerto de Bilbo ==> threshold Tmin Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min))
 
 

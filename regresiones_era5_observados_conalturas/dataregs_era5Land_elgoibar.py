@@ -127,7 +127,7 @@ print("\nTendencia Tmin Elgoibar\n=====================================\n")
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 
-print("\nTreshold Tmin Elgoibar ==> threshold Tmax Elgoibar ERA5Land\n===================================================================\n")
+print("\nTreshold Tmin Elgoibar ==> threshold Tmin Elgoibar ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
 
 

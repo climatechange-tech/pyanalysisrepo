@@ -208,11 +208,11 @@ print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
 
 print("\nTendencia Tmin Aeropuerto de Bilbo\n=====================================\n")
-print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept3,slope3))
+print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 
 print("\nTendencia wspeed Aeropuerto de Bilbo\n=====================================\n")
-print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
+print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept4,slope4))
 print("Coeficiente de correlacion y determinacion de ws entre aemet-era5Land: %5.2f, %5.2f" %(r4,r4**2))
 
 thres_bilbo_max=35
@@ -224,7 +224,7 @@ thres_bilbo_era5L_min = intercept3 + slope3*thres_bilbo_min
 print("\nTreshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC" %(thres_bilbo_max,thres_bilbo_era5L_max))
 
-print("\nTreshold Tmin Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
+print("\nTreshold Tmin Aeropuerto de Bilbo ==> threshold Tmin Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min))
 
 
@@ -236,6 +236,10 @@ print("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min))
 ofile_bilbo=open("Tdata_BILBO_AERO_sesgocorr.dat",'w')
 ofiles.append(ofile_bilbo)
 
+for i in range(len(xT_max)):
+    ofile_bilbo.write("%7.3f %7.3f %7.3f %7.3f\n" %(xT_max[i],yT_max[i],xT_min[i],yT_min[i]))
+
+"""
 for irow in range(ldfb1):
     for ivar in range(len(df_bilbo1.loc[0])):
         if ivar==0:
@@ -244,5 +248,5 @@ for irow in range(ldfb1):
             ofile_bilbo.write("%8.3f "%df_bilbo1.loc[irow][ivar])
         if ivar == len(df_bilbo1.loc[0])-1:
             ofile_bilbo.write("\n")
-    
+"""
 close_files(ofiles)

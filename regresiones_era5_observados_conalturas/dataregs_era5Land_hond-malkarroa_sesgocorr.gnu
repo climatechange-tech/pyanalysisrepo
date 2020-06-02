@@ -26,9 +26,9 @@ set arrow front from 30, graph 0 to 30, graph 1 nohead lw 2
 
 ymax(x)=A+B*x
 
-fit ymax(x) 'Tdata_HONDARRIBIA.dat' u 1:2 via A,B
+fit ymax(x) 'Tdata_HONDARRIBIA_sesgocorr.dat' u 1:2 via A,B
 
-p 'Tdata_HONDARRIBIA.dat' u 1:2 w p lt 7 ps 1 lc rgb "red" notitle,\
+p 'Tdata_HONDARRIBIA_sesgocorr.dat' u 1:2 w p lt 7 ps 1 lc rgb "red" notitle,\
   ymax(x) w l lw 3 t "T_{ERA5} = -7.35 + 1.05T_{OBS} ({/Symbol \260}C)",24.06 lw 2 lc rgb "black" notitle 
 
 #
@@ -51,9 +51,9 @@ set arrow front from 19, graph 0 to 19, graph 1 nohead lw 2
 
 ymin(x)=C+D*x
 
-fit ymin(x) 'Tdata_HONDARRIBIA.dat' u 3:4 via C,D
+fit ymin(x) 'Tdata_HONDARRIBIA_sesgocorr.dat' u 3:4 via C,D
 
-p 'Tdata_HONDARRIBIA.dat' u 3:4 w p lt 7 ps 1 lc rgb "red" notitle,\
+p 'Tdata_HONDARRIBIA_sesgocorr.dat' u 3:4 w p lt 7 ps 1 lc rgb "red" notitle,\
   ymin(x) w l lw 3 t "T_{ERA5} = -5.11 + 0.95T_{OBS} ({/Symbol \260}C)",12.96 lw 2 lc rgb "black" notitle
 
 

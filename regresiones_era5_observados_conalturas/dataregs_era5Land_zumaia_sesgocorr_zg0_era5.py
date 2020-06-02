@@ -108,9 +108,9 @@ df_comp.values[:,1:]=df_comp.values[:,1:].astype(np.float64)
 
 ldfc=len(df_comp)
 
-ifile_z="geopotential_ERA5Land_txtfiles/geopotential_cities.txt"
+ifile_z="geopotential_ERA5_txtfiles/era5Land_GIPUZKOA_ZUMAIA_zg0_dailymean.txt"
 z=lectura_datos(ifile_z)
-h_zumaia=z[-1,1].astype(np.float64)
+h_zumaia=np.mean(z[-1,1].astype(np.float64))
 
 
 xT_max=tempcorr_obs(df_comp.tmax.values.astype(np.float64),h_zumaia)
@@ -147,7 +147,7 @@ print("\nTendencia Tmin Zumaia\n=====================================\n")
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 
-print("\nTreshold Tmin Zumaia ==> threshold Tmax Zumaia ERA5Land\n===================================================================\n")
+print("\nTreshold Tmin Zumaia ==> threshold Tmin Zumaia ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
 
 
@@ -156,7 +156,7 @@ print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
 #####################
 
 
-ofile=open("Tdata_ZUMAIA_sesgocorr.dat",'w')
+ofile=open("Tdata_ZUMAIA_sesgocorr_zg0_era5.dat",'w')
 ofiles.append(ofile)
 
 for i in range(len(xT_max)):

@@ -25,9 +25,9 @@ set arrow front from 30, graph 0 to 30, graph 1 nohead lw 2
 
 ymax(x)=A+B*x
 
-fit ymax(x) 'Tdata_LEKEITIO.dat' u 1:2 via A,B
+fit ymax(x) 'Tdata_LEKEITIO_sesgocorr.dat' u 1:2 via A,B
 
-p 'Tdata_LEKEITIO.dat' u 1:2 w p lt 7 ps 1 lc rgb "red" notitle,\
+p 'Tdata_LEKEITIO_sesgocorr.dat' u 1:2 w p lt 7 ps 1 lc rgb "red" notitle,\
   ymax(x) w l lw 3 t "T_{ERA5} = -5.03 + 1.07T_{OBS} ({/Symbol \260}C)",27 lw 2 lc rgb "black" notitle
 
 #
@@ -48,9 +48,9 @@ set arrow front from 19, graph 0 to 19, graph 1 nohead lw 2
 
 ymin(x)=C+D*x
 
-fit ymin(x) 'Tdata_LEKEITIO.dat' u 3:4 via C,D
+fit ymin(x) 'Tdata_LEKEITIO_sesgocorr.dat' u 3:4 via C,D
 
-p 'Tdata_LEKEITIO.dat' u 3:4 w p lt 7 ps 1 lc rgb "red" notitle,\
+p 'Tdata_LEKEITIO_sesgocorr.dat' u 3:4 w p lt 7 ps 1 lc rgb "red" notitle,\
   ymin(x) w l lw 3 t "T_{ERA5} = -4.58 + 1.01T_{OBS} ({/Symbol \260}C)",14.53 lw 2 lc rgb "black" notitle
 
 
