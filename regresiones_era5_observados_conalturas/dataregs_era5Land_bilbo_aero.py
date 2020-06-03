@@ -144,11 +144,13 @@ for irow in range(ldfb1):
     if (pd.isna(df_bilbo1.loc[irow].tmed)==True or pd.isna(df_bilbo1.loc[irow].tmin)==True or pd.isna(df_bilbo1.loc[irow].tmax)==True or pd.isna(df_bilbo1.loc[irow].wspeed)==True or pd.isna(df_bilbo1.loc[irow].tmed)==True):
         df_bilbo1.loc[irow]=np.nan
 
+"""
 xT=df_bilbo1.tmed.values.astype(np.float64)
 yT=df_bilbo1.T_2m.values.astype(np.float64)
 
 xT=xT[np.logical_not(np.isnan(xT))]
 yT=yT[np.logical_not(np.isnan(yT))]
+"""
 
 xT_max=df_bilbo1.tmax.values.astype(np.float64)
 yT_max=df_bilbo1.T_2m_max.values.astype(np.float64)
@@ -162,23 +164,27 @@ yT_min=df_bilbo1.T_2m_min.values.astype(np.float64)
 xT_min=xT_min[np.logical_not(np.isnan(xT_min))]
 yT_min=yT_min[np.logical_not(np.isnan(yT_min))]
 
+"""
 xws=df_bilbo1.wspeed.values.astype(np.float64)
 yws=df_bilbo1.wind_speed_10.values.astype(np.float64)
 
 xws=xws[np.logical_not(np.isnan(xws))]
 yws=yws[np.logical_not(np.isnan(yws))]
+"""
 
-slope1,intercept1,r1,p1,stderr1=ss.linregress(xT,yT)
+#slope1,intercept1,r1,p1,stderr1=ss.linregress(xT,yT)
 slope2,intercept2,r2,p2,stderr2=ss.linregress(xT_max,yT_max)
 slope3,intercept3,r3,p3,stderr3=ss.linregress(xT_min,yT_min)
-slope4,intercept4,r4,p4,stderr4=ss.linregress(xws,yws)
+#slope4,intercept4,r4,p4,stderr4=ss.linregress(xws,yws)
 
-if np.all(np.isnan(ss.linregress(xT,yT))) or np.all(np.isnan(ss.linregress(xT_max,yT_max))) or np.all(np.isnan(ss.linregress(xT_min,yT_min))) or np.all(np.isnan(ss.linregress(xws,yws))) == True :
+if np.all(np.isnan(ss.linregress(xT_max,yT_max))) or np.all(np.isnan(ss.linregress(xT_min,yT_min))) == True :
     raise ValueError("Kontuz! Matrizeetako bat(zu)ek nan balioa dutenentz behatu")
 
+"""
 print("\nTendencia T Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de T entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
+"""
 
 print("\nTendencia Tmax Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
@@ -188,9 +194,11 @@ print("\nTendencia Tmin Aeropuerto de Bilbo\n===================================
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept3,slope3))
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 
+"""
 print("\nTendencia wspeed Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept4,slope4))
 print("Coeficiente de correlacion y determinacion de ws entre aemet-era5Land: %5.2f, %5.2f" %(r4,r4**2))
+"""
 
 thres_bilbo_max=35
 thres_bilbo_min=17
@@ -213,6 +221,10 @@ print("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min))
 ofile_bilbo=open("Tdata_BILBO_AERO.dat",'w')
 ofiles.append(ofile_bilbo)
 
+for i in range(len(xT_max)):
+    ofile_bilbo.write("%7.3f %7.3f %7.3f %7.3f\n" %(xT_max[i],yT_max[i],xT_min[i],yT_min[i]))
+
+"""
 for irow in range(ldfb1):
     for ivar in range(len(df_bilbo1.loc[0])):
         if ivar==0:
@@ -221,5 +233,6 @@ for irow in range(ldfb1):
             ofile_bilbo.write("%8.3f "%df_bilbo1.loc[irow][ivar])
         if ivar == len(df_bilbo1.loc[0])-1:
             ofile_bilbo.write("\n")
-    
+"""
+
 close_files(ofiles)

@@ -28,7 +28,7 @@ def tempcorr_obs(T0,h0):
     Tobs_corr=T0+0.00649*(h0-2)
     return Tobs_corr
     
-def tempcorr_ERA5(T0,h0):
+def tempcorr_ERA5Land(T0,h0):
     """
     Temperatura ERA5 a 2m
     """
@@ -165,43 +165,49 @@ for irow in range(ldfb1):
 
 ifile_z="geopotential_ERA5Land_txtfiles/geopotential_to_z_cities.txt"
 z=lectura_datos(ifile_z)
-h_bilbo=z[0,1].astype(np.float64)
+h_bilbo=z[0,-1].astype(np.float64)
 
+"""
 xT=tempcorr_obs(df_bilbo1.tmed.values.astype(np.float64),h_bilbo)
 yT=df_bilbo1.T_2m.values.astype(np.float64)
 
 xT=xT[np.logical_not(np.isnan(xT))]
 yT=yT[np.logical_not(np.isnan(yT))]
+"""
 
-xT_max=tempcorr_obs(df_bilbo1.tmax.values.astype(np.float64),h_bilbo)
-yT_max=df_bilbo1.T_2m_max.values.astype(np.float64)
+xT_max=df_bilbo1.tmax.values.astype(np.float64)
+yT_max=tempcorr_ERA5Land(df_bilbo1.T_2m_max.values.astype(np.float64),h_bilbo)
 
 xT_max=xT_max[np.logical_not(np.isnan(xT_max))]
 yT_max=yT_max[np.logical_not(np.isnan(yT_max))]
 
-xT_min=tempcorr_obs(df_bilbo1.tmin.values.astype(np.float64),h_bilbo)
-yT_min=df_bilbo1.T_2m_min.values.astype(np.float64)
+xT_min=df_bilbo1.tmin.values.astype(np.float64)
+yT_min=tempcorr_ERA5Land(df_bilbo1.T_2m_min.values.astype(np.float64),h_bilbo)
 
 xT_min=xT_min[np.logical_not(np.isnan(xT_min))]
 yT_min=yT_min[np.logical_not(np.isnan(yT_min))]
 
+"""
 xws=df_bilbo1.wspeed.values.astype(np.float64)
 yws=df_bilbo1.wind_speed_10.values.astype(np.float64)
 
 xws=xws[np.logical_not(np.isnan(xws))]
 yws=yws[np.logical_not(np.isnan(yws))]
+"""
 
-slope1,intercept1,r1,p1,stderr1=ss.linregress(xT,yT)
+#slope1,intercept1,r1,p1,stderr1=ss.linregress(xT,yT)
 slope2,intercept2,r2,p2,stderr2=ss.linregress(xT_max,yT_max)
 slope3,intercept3,r3,p3,stderr3=ss.linregress(xT_min,yT_min)
-slope4,intercept4,r4,p4,stderr4=ss.linregress(xws,yws)
+#slope4,intercept4,r4,p4,stderr4=ss.linregress(xws,yws)
 
-if np.all(np.isnan(ss.linregress(xT,yT))) or np.all(np.isnan(ss.linregress(xT_max,yT_max))) or np.all(np.isnan(ss.linregress(xT_min,yT_min))) or np.all(np.isnan(ss.linregress(xws,yws))) == True :
+if np.all(np.isnan(ss.linregress(xT_max,yT_max))) or np.all(np.isnan(ss.linregress(xT_min,yT_min))) == True :
     raise ValueError("Kontuz! Matrizeetako bat(zu)ek nan balioa dutenentz behatu")
 
+"""
 print("\nTendencia T Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de T entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
+"""
 
 print("\nTendencia Tmax Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
@@ -211,9 +217,11 @@ print("\nTendencia Tmin Aeropuerto de Bilbo\n===================================
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept3,slope3))
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 
+"""
 print("\nTendencia wspeed Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept4,slope4))
 print("Coeficiente de correlacion y determinacion de ws entre aemet-era5Land: %5.2f, %5.2f" %(r4,r4**2))
+"""
 
 thres_bilbo_max=35
 thres_bilbo_min=17

@@ -1,12 +1,6 @@
 Bilbo: Aemet eta ERA5 datuen matrizeak EZ DIRA tamaina berekoak: aemet ==> 11251 < ERA5 ==> 11323
 Bilbon behatutako eta era5Land datu-baseak prozesatutako datuen matrizeak tamaina berekoak dira 
 
-Tendencia T Aeropuerto de Bilbo
-=====================================
-
-y_ERA5(t) = 0.60 + 0.86 T_OBS
-Coeficiente de correlacion y determinacion de T entre aemet-era5Land:  0.98,  0.95
-
 Tendencia Tmax Aeropuerto de Bilbo
 =====================================
 
@@ -18,12 +12,6 @@ Tendencia Tmin Aeropuerto de Bilbo
 
 y_ERA5(t) = 2.48 + 0.83 T_OBS
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.94,  0.89
-
-Tendencia wspeed Aeropuerto de Bilbo
-=====================================
-
-y_ERA5(t) = 1.52 + 0.65 T_OBS
-Coeficiente de correlacion y determinacion de ws entre aemet-era5Land:  0.67,  0.45
 
 Treshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land
 ===================================================================

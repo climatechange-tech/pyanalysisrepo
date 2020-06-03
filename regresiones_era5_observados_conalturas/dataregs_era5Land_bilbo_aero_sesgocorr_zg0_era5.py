@@ -199,9 +199,11 @@ slope4,intercept4,r4,p4,stderr4=ss.linregress(xws,yws)
 if np.all(np.isnan(ss.linregress(xT,yT))) or np.all(np.isnan(ss.linregress(xT_max,yT_max))) or np.all(np.isnan(ss.linregress(xT_min,yT_min))) or np.all(np.isnan(ss.linregress(xws,yws))) == True :
     raise ValueError("Kontuz! Matrizeetako bat(zu)ek nan balioa dutenentz behatu")
 
+"""
 print("\nTendencia T Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de T entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
+"""
 
 print("\nTendencia Tmax Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
@@ -211,9 +213,12 @@ print("\nTendencia Tmin Aeropuerto de Bilbo\n===================================
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept3,slope3))
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
 
+
+"""
 print("\nTendencia wspeed Aeropuerto de Bilbo\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept4,slope4))
 print("Coeficiente de correlacion y determinacion de ws entre aemet-era5Land: %5.2f, %5.2f" %(r4,r4**2))
+"""
 
 thres_bilbo_max=35
 thres_bilbo_min=17

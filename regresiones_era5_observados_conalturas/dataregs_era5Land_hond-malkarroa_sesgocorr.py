@@ -28,7 +28,7 @@ def tempcorr_obs(T0,h0):
     Tobs_corr=T0+0.00649*(h0-2)
     return Tobs_corr
     
-def tempcorr_ERA5(T0,h0):
+def tempcorr_ERA5Land(T0,h0):
     """
     Temperatura ERA5 a 2m
     """
@@ -110,16 +110,16 @@ ldfc=len(df_comp)
 
 ifile_z="geopotential_ERA5Land_txtfiles/geopotential_to_z_cities.txt"
 z=lectura_datos(ifile_z)
-h_hond=z[3,1].astype(np.float64)
+h_hond=z[3,-1].astype(np.float64)
 
-xT_max=tempcorr_obs(df_comp.tmax.values.astype(np.float64),h_hond)
-yT_max=df_comp.tmax_era5L.values.astype(np.float64)
+xT_max=df_comp.tmax.values.astype(np.float64)
+yT_max=tempcorr_ERA5Land(df_comp.tmax_era5L.values.astype(np.float64),h_hond)
 
 xT_max=xT_max[np.logical_not(np.isnan(xT_max))]
 yT_max=yT_max[np.logical_not(np.isnan(yT_max))]
 
-xT_min=tempcorr_obs(df_comp.tmin.values.astype(np.float64),h_hond)
-yT_min=df_comp.tmin_era5L.values.astype(np.float64)
+xT_min=df_comp.tmin.values.astype(np.float64)
+yT_min=tempcorr_ERA5Land(df_comp.tmin_era5L.values.astype(np.float64),h_hond)
 
 xT_min=xT_min[np.logical_not(np.isnan(xT_min))]
 yT_min=yT_min[np.logical_not(np.isnan(yT_min))]
