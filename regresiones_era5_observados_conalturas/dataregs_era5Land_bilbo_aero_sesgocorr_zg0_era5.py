@@ -163,7 +163,7 @@ for irow in range(ldfb1):
 #Normalizar los datos observados a 2m
 #####################################
 
-ifile_z="geopotential_ERA5_txtfiles/era5Land_BILBAO_AEROPUERTO_zg0_dailymean.txt"
+ifile_z="geopotential_ERA5_txtfiles/era5_BILBAO_AEROPUERTO_zg0_dailymean.txt"
 z=lectura_datos(ifile_z)
 h_bilbo=np.mean(z[0,1].astype(np.float64))
 

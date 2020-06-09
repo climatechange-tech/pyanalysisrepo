@@ -184,3 +184,26 @@ Treshold Tmin Zumarraga ==> threshold Tmin Zumarraga ERA5Land
 
 17 ºC ==>   17.21 ºC
 
+
+Tendencia Tmax Foronda
+=====================================
+
+y_ERA5(t) = 0.14 + 0.89 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.96
+
+Treshold Tmax Foronda ==> threshold Tmax Foronda ERA5Land
+===================================================================
+
+35 ºC ==>   31.21 ºC
+
+Tendencia Tmin Foronda
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.93,  0.87
+y_ERA5(t) = 0.95 + 0.94 T_OBS
+
+Treshold Tmin Foronda ==> threshold Tmin Foronda ERA5Land
+===================================================================
+
+17 ºC ==>   16.99 ºC
+

@@ -14,14 +14,15 @@ datetimes=cftime.num2date(timesarr,tunits)
 
 zg0=inc.variables["z"][:].data
 
-latlondict={"BILBAO_AEROPUERTO":              [-2.5423,43.1753,42],\
-            "BIZKAIA_GUENES":                 [-3.0617,43.1212,208],\
-            "BIZKAIA_LEKEITIO":               [-2.3037,43.2237,12],\
-            "GIPUZKOA_HONDARRIBIA-MALKARROA": [-1.4732,43.2125,4],\
-            "GIPUZKOA_IGELDO":                [-2.0228,43.1823,251],\
-            "GIPUZKOA_ELGOIBAR":              [-2.2448,43.1234,119],\
-            "GIPUZKOA_ZUMARRAGA":             [-2.1903,43.0448,420],\
-            "GIPUZKOA_ZUMAIA" :               [-2.1504,43.1808,28]
+latlondict={"BILBAO_AEROPUERTO":              [-2.90643,43.29806,42],\
+            "BIZKAIA_GUENES":                 [-3.10468,43.20331,208],\
+            "BIZKAIA_LEKEITIO":               [-2.5103,43.37693,12],\
+            "GIPUZKOA_HONDARRIBIA-MALKARROA": [-1.8509,43.31406,4],\
+            "GIPUZKOA_IGELDO":                [-2.0409,43.30631,251],\
+            "GIPUZKOA_ELGOIBAR":              [-2.41331,43.21618,119],\
+            "GIPUZKOA_ZUMARRAGA":             [-2.31743,43.07993,420],\
+            "GIPUZKOA_ZUMAIA" :               [-2.2511,43.30218,28],\
+            "ARABA_FORONDA":                  [-2.7351,42.88193,513]
 }
 
 cities=latlondict.keys()
@@ -38,9 +39,9 @@ if len(times)==1:
         g0=9.80665
         z_era5L=zg0_era5L/g0
 
-        #ofile_ind=open(city+".txt",'w')
-        #ofile_ind.write("%s %f"%(city,z_era5L))
-        #ofile_ind.close()
+        ofile_ind=open("era5Land_"+city+".txt",'w')
+        ofile_ind.write("%s %f"%(city,z_era5L))
+        ofile_ind.close()
 
         z_real=latlondict[city][-1]
         ofile.write("%s %.2f %i\n" %(city,z_era5L,z_real))

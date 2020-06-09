@@ -108,7 +108,7 @@ df_comp.values[:,1:]=df_comp.values[:,1:].astype(np.float64)
 
 ldfc=len(df_comp)
 
-ifile_z="geopotential_ERA5_txtfiles/era5Land_GIPUZKOA_ZUMARRAGA_zg0_dailymean.txt"
+ifile_z="geopotential_ERA5_txtfiles/era5_GIPUZKOA_ZUMARRAGA_zg0_dailymean.txt"
 z=lectura_datos(ifile_z)
 h_zumarraga=np.mean(z[-2,1].astype(np.float64))
 

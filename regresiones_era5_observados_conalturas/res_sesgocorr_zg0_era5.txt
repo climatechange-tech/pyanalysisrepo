@@ -1,108 +1,96 @@
 Bilbo: Aemet eta ERA5 datuen matrizeak EZ DIRA tamaina berekoak: aemet ==> 11251 < ERA5 ==> 11323
 Bilbon behatutako eta era5Land datu-baseak prozesatutako datuen matrizeak tamaina berekoak dira 
 
-Tendencia T Aeropuerto de Bilbo
-=====================================
-
-y_ERA5(t) = -0.73 + 0.86 T_OBS
-Coeficiente de correlacion y determinacion de T entre aemet-era5Land:  0.98,  0.95
-
 Tendencia Tmax Aeropuerto de Bilbo
 =====================================
 
-y_ERA5(t) = -0.89 + 0.81 T_OBS
+y_ERA5(t) = -1.01 + 0.81 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.92
 
 Tendencia Tmin Aeropuerto de Bilbo
 =====================================
 
-y_ERA5(t) = 1.20 + 0.83 T_OBS
+y_ERA5(t) = 1.07 + 0.83 T_OBS
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.94,  0.89
-
-Tendencia wspeed Aeropuerto de Bilbo
-=====================================
-
-y_ERA5(t) = 1.52 + 0.65 T_OBS
-Coeficiente de correlacion y determinacion de ws entre aemet-era5Land:  0.67,  0.45
 
 Treshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land
 ===================================================================
 
-35 ºC ==>   27.32 ºC
+35 ºC ==>   27.20 ºC
 
 Treshold Tmin Aeropuerto de Bilbo ==> threshold Tmin Aeropuerto de Bilbo ERA5Land
 ===================================================================
 
-17 ºC ==>   15.35 ºC
+17 ºC ==>   15.22 ºC
 
 
 Tendencia Tmax Elgoibar
 =====================================
 
-y_ERA5(t) = -6.43 + 1.04 T_OBS
+y_ERA5(t) = -4.05 + 1.04 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.93
 
 Treshold Tmax Elgoibar ==> threshold Tmax Elgoibar ERA5Land
 ===================================================================
 
-35 ºC ==>   29.87 ºC
+35 ºC ==>   32.25 ºC
 
 Tendencia Tmin Elgoibar
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.95,  0.91
-y_ERA5(t) = -5.07 + 1.00 T_OBS
+y_ERA5(t) = -2.78 + 1.00 T_OBS
 
 Treshold Tmin Elgoibar ==> threshold Tmin Elgoibar ERA5Land
 ===================================================================
 
-17 ºC ==>   11.93 ºC
+17 ºC ==>   14.21 ºC
 
 
 Tendencia Tmax Gueñes
 =====================================
 
-y_ERA5(t) = -3.88 + 0.94 T_OBS
+y_ERA5(t) = -2.31 + 0.94 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.95
 
 Treshold Tmax Gueñes ==> threshold Tmax Gueñes ERA5Land
 ===================================================================
 
-35 ºC ==>   28.97 ºC
+35 ºC ==>   30.54 ºC
 
 Tendencia Tmin Gueñes
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
-y_ERA5(t) = -3.91 + 0.98 T_OBS
+y_ERA5(t) = -2.27 + 0.98 T_OBS
 
 Treshold Tmin Gueñes ==> threshold Tmin Gueñes ERA5Land
 ===================================================================
 
-17 ºC ==>   12.83 ºC
+17 ºC ==>   14.47 ºC
 
 
 Tendencia Tmax Hondarribia
 =====================================
 
-y_ERA5(t) = -6.89 + 1.05 T_OBS
+y_ERA5(t) = -6.63 + 1.05 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.94,  0.89
 
 Treshold Tmax Hondarribia ==> threshold Tmax Hondarribia ERA5Land
 ===================================================================
 
-30 ºC ==>   24.52 ºC
+30 ºC ==>   24.78 ºC
 
 Tendencia Tmin Hondarribia
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.93
-y_ERA5(t) = -4.70 + 0.95 T_OBS
+y_ERA5(t) = -4.46 + 0.95 T_OBS
 
 Treshold Tmin Hondarribia ==> threshold Tmin Hondarribia ERA5Land
 ===================================================================
 
-19 ºC ==>   13.38 ºC
+19 ºC ==>   13.62 ºC
 
 
 Tendencia Tmax Igeldo
@@ -131,24 +119,24 @@ Treshold Tmin Igeldo ==> threshold Tmin Igeldo ERA5Land
 Tendencia Tmax Lekeitio
 =====================================
 
-y_ERA5(t) = -4.47 + 1.07 T_OBS
+y_ERA5(t) = -2.81 + 1.07 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.93,  0.87
 
 Treshold Tmax Lekeitio ==> threshold Tmax Lekeitio ERA5Land
 ===================================================================
 
-30 ºC ==>   27.55 ºC
+30 ºC ==>   29.21 ºC
 
 Tendencia Tmin Lekeitio
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
-y_ERA5(t) = -4.05 + 1.01 T_OBS
+y_ERA5(t) = -2.49 + 1.01 T_OBS
 
 Treshold Tmin Lekeitio ==> threshold Tmin Lekeitio ERA5Land
 ===================================================================
 
-19 ºC ==>   15.06 ºC
+19 ºC ==>   16.62 ºC
 
 
 Tendencia Tmax Zumaia
@@ -195,4 +183,27 @@ Treshold Tmin Zumarraga ==> threshold Tmin Zumarraga ERA5Land
 ===================================================================
 
 17 ºC ==>   13.41 ºC
+
+
+Tendencia Tmax Foronda
+=====================================
+
+y_ERA5(t) = -2.83 + 0.89 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.96
+
+Treshold Tmax Foronda ==> threshold Tmax Foronda ERA5Land
+===================================================================
+
+35 ºC ==>   28.24 ºC
+
+Tendencia Tmin Foronda
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.93,  0.87
+y_ERA5(t) = -2.20 + 0.94 T_OBS
+
+Treshold Tmin Foronda ==> threshold Tmin Foronda ERA5Land
+===================================================================
+
+17 ºC ==>   13.84 ºC
 
