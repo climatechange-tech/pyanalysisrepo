@@ -22,8 +22,12 @@ latlondict={"BILBAO_AEROPUERTO":              [-2.90643,43.29806,42],\
             "GIPUZKOA_ELGOIBAR":              [-2.41331,43.21618,119],\
             "GIPUZKOA_ZUMARRAGA":             [-2.31743,43.07993,420],\
             "GIPUZKOA_ZUMAIA" :               [-2.2511,43.30218,28],\
-            "ARABA_FORONDA":                  [-2.7351,42.88193,513]
+            "ARABA_FORONDA":                  [-2.7351,42.88193,513],\
+            "ARABA_GASTEIZ_AEROPUERTO":       [-2.73281,42.87193,513],\
+            "PAMPLONA_AEROPUERTO":            [-1.645271,42.769901,459],\
+            "NAFARROA_CADREITA":              [-1.685134,42.225150,268],\
 }
+
 
 cities=latlondict.keys()
 

@@ -376,7 +376,7 @@ for irow in range(len(df)):
 
 
 
-#HONDARRIBIA-MALKARROA######################################################################################
+#FORONDA-TXOKIZA######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
 with open('araba-foronda-txokiza-1986_1989.json', 'r', encoding='latin1') as json_file:  
@@ -422,6 +422,97 @@ for irow in range(len(df)):
         ofile_fortx.write("%s " %df.loc[irow][ivar])
         if ivar == len(df.loc[0])-1:
             ofile_fortx.write("\n")
+
+
+#PAMPLONA AEROPUERTO######################################################################################
+###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
+#Leer json con las observaciones de Aemet
+with open('nafarroa-pamplona-aeropuerto-1986_1989.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+#Creación del dataframe con los datos_y_calculos
+df = pd.DataFrame(data)
+
+with open('nafarroa-pamplona-aeropuerto-1990_1992.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-pamplona-aeropuerto-1993_1997.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-pamplona-aeropuerto-1998_2002.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-pamplona-aeropuerto-2003_2007.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-pamplona-aeropuerto-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-pamplona-aeropuerto-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+ofile_pamplona=open("aemet_PAMPLONA.txt",'w')
+ofiles.append(ofile_pamplona)
+
+for irow in range(len(df)):
+    for ivar in range(len(df.loc[0])):
+        ofile_pamplona.write("%s " %df.loc[irow][ivar])
+        if ivar == len(df.loc[0])-1:
+            ofile_pamplona.write("\n")
+
+
+#NAFARROA-CADREITA######################################################################################
+###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
+#Leer json con las observaciones de Aemet
+with open('nafarroa-cadreita-1991_1992.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+#Creación del dataframe con los datos_y_calculos
+df = pd.DataFrame(data)
+
+with open('nafarroa-cadreita-1993_1997.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-cadreita-1998_2002.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-cadreita-2003_2007.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-cadreita-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+with open('nafarroa-cadreita-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+    data = json.load(json_file)
+next_df = pd.DataFrame(data)
+df = pd.concat([df, next_df],ignore_index=True)
+
+ofile_cadreita=open("aemet_PAMPLONA.txt",'w')
+ofiles.append(ofile_cadreita)
+
+for irow in range(len(df)):
+    for ivar in range(len(df.loc[0])):
+        ofile_cadreita.write("%s " %df.loc[irow][ivar])
+        if ivar == len(df.loc[0])-1:
+            ofile_cadreita.write("\n")
 
 
 close_files(ofiles)
