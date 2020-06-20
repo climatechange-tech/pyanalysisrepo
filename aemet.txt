@@ -1,6 +1,0 @@
-AEMETera sartzeko datuak
-------------------------
-
-·Erabiltzailea: jagavit093
-·Pasahitza: 9dD.DQ38#019
-·API kodea: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYWdhYmFudHhvQGdtYWlsLmNvbSIsImp0aSI6Ijg5ZTZlYTAzLTVjYjUtNGE1ZC04YjM2LTEyNmMxZDY4YTJjNiIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNTg0OTU3MzYyLCJ1c2VySWQiOiI4OWU2ZWEwMy01Y2I1LTRhNWQtOGIzNi0xMjZjMWQ2OGEyYzYiLCJyb2xlIjoiIn0.Vo4zQKFd38uC9RrJypJVjprUBkNxP7glDcCZKZF637Q

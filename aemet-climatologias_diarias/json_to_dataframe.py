@@ -505,7 +505,7 @@ with open('nafarroa-cadreita-2012-12-31_2016.json', 'r', encoding='latin1') as j
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-ofile_cadreita=open("aemet_PAMPLONA.txt",'w')
+ofile_cadreita=open("aemet_CADREITA.txt",'w')
 ofiles.append(ofile_cadreita)
 
 for irow in range(len(df)):
