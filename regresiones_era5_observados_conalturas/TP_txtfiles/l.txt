@@ -1,0 +1,24 @@
+total 1,1M
+drwxrwxr-x 2 jonander jonander 4,0K jun 20 23:45 .
+drwxrwxr-x 7 jonander jonander  12K jun 20 22:34 ..
+-rw-rw-r-- 1 jonander jonander 2,1K jun  3 17:51 aemet-era5_TP_MADRID_AERO_20140305.txt
+-rw-rw-r-- 1 jonander jonander 2,1K jun  3 17:51 aemet-era5_TP_MADRID_AERO_20140312.txt
+-rw-rw-r-- 1 jonander jonander 2,4K jun  3 17:51 aemet-era5_TP_MADRID_AERO_20140319.txt
+-rw-rw-r-- 1 jonander jonander 2,3K jun  3 17:51 aemet-era5_TP_MADRID_AERO_20140326.txt
+-rw-rw-r-- 1 jonander jonander  49K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140301.txt
+-rw-rw-r-- 1 jonander jonander  58K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140302.txt
+-rw-rw-r-- 1 jonander jonander  71K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140304.txt
+-rw-rw-r-- 1 jonander jonander  65K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140305.txt
+-rw-rw-r-- 1 jonander jonander  66K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140306.txt
+-rw-rw-r-- 1 jonander jonander  79K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140307.txt
+-rw-rw-r-- 1 jonander jonander  74K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140308.txt
+-rw-rw-r-- 1 jonander jonander  37K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140309.txt
+-rw-rw-r-- 1 jonander jonander  69K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140310.txt
+-rw-rw-r-- 1 jonander jonander  71K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140311.txt
+-rw-rw-r-- 1 jonander jonander  74K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140312.txt
+-rw-rw-r-- 1 jonander jonander  69K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140313.txt
+-rw-rw-r-- 1 jonander jonander  70K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140317.txt
+-rw-rw-r-- 1 jonander jonander  73K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140323.txt
+-rw-rw-r-- 1 jonander jonander  15K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140328_CORRELACION_casi.pdf
+-rw-rw-r-- 1 jonander jonander  44K jun  3 17:51 euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_20140328.txt
+-rw-rw-r-- 1 jonander jonander    0 jun 20 23:45 l.txt
