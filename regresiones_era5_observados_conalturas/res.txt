@@ -217,7 +217,7 @@ Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98, 
 Treshold Tmax Pamplona ==> threshold Tmax Pamplona ERA5Land
 ===================================================================
 
-35 ºC ==>   30.30 ºC
+36 ºC ==>   31.18 ºC
 
 Tendencia Tmin Pamplona
 =====================================
@@ -228,7 +228,7 @@ y_ERA5(t) = -0.18 + 0.95 T_OBS
 Treshold Tmin Pamplona ==> threshold Tmin Pamplona ERA5Land
 ===================================================================
 
-17 ºC ==>   15.96 ºC
+18 ºC ==>   16.91 ºC
 
 
 Tendencia Tmax Cadreita
@@ -240,7 +240,7 @@ Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.97, 
 Treshold Tmax Cadreita ==> threshold Tmax Cadreita ERA5Land
 ===================================================================
 
-35 ºC ==>   33.97 ºC
+36 ºC ==>   34.95 ºC
 
 Tendencia Tmin Cadreita
 =====================================
@@ -251,5 +251,5 @@ y_ERA5(t) = 1.34 + 0.94 T_OBS
 Treshold Tmin Cadreita ==> threshold Tmin Cadreita ERA5Land
 ===================================================================
 
-17 ºC ==>   17.28 ºC
+18 ºC ==>   18.21 ºC
 
