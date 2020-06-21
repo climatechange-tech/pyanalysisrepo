@@ -47,8 +47,8 @@ ofiles=[]
 #Guardar datos en dataframes
 ############################
    
-ifile="../aemet-climatologias_diarias/aemet_FORONDA_corrected.txt"
-ifile_era5L="../T_Td_ws_ERA5Land/era5Land_FORONDA_dailymean.txt"
+ifile="../aemet-climatologias_diarias/aemet_PAMPLONA_corrected.txt"
+ifile_era5L="../T_Td_ws_ERA5Land/era5Land_PAMPLONA-AERO_dailymean.txt"
 
 data=lectura_datos(ifile)
 data_era5L=lectura_datos(ifile_era5L)
@@ -79,9 +79,9 @@ for t in range(ifirst,le):
         ifecha_era5 = np.where(fechas_era5L==fechas[ifecha])[0][0]
         
         fecha       = data[ifecha,0]
-        tmin        = data[ifecha,7]
+        tmin        = data[ifecha,8]
         tmin_era5L  = data_era5L[ifecha_era5,7]
-        tmax        = data[ifecha,9]
+        tmax        = data[ifecha,10]
         tmax_era5L  = data_era5L[ifecha_era5,6]
         
         if (tmin=="nan" or tmax=="nan"):
@@ -129,7 +129,7 @@ slope1,intercept1,r1,p1,stderr1=ss.linregress(xT_max,yT_max)
 slope2,intercept2,r2,p2,stderr2=ss.linregress(xT_min,yT_min)
 
 
-print("\nTendencia Tmax Foronda\n=====================================\n")
+print("\nTendencia Tmax Pamplona\n=====================================\n")
 
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
@@ -137,17 +137,17 @@ print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: 
 thres_max=36
 thres_era5L_max = intercept1 + slope1*thres_max
 
-print("\nTreshold Tmax Foronda ==> threshold Tmax Foronda ERA5Land\n===================================================================\n")
+print("\nTreshold Tmax Pamplona ==> threshold Tmax Pamplona ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC" %(thres_max,thres_era5L_max))
 
 thres_min=18
 thres_era5L_min = intercept2 + slope2*thres_min
 
-print("\nTendencia Tmin Foronda\n=====================================\n")
+print("\nTendencia Tmin Pamplona\n=====================================\n")
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 
-print("\nTreshold Tmin Foronda ==> threshold Tmin Foronda ERA5Land\n===================================================================\n")
+print("\nTreshold Tmin Pamplona ==> threshold Tmin Pamplona ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
 
 
@@ -156,7 +156,7 @@ print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
 #####################
 
 
-ofile=open("Tdata_FORONDA_sesgocorr.dat",'w')
+ofile=open("Tdata_PAMPLONA_sesgocorr.dat",'w')
 ofiles.append(ofile)
 
 for i in range(len(xT_max)):

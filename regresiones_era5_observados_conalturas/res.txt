@@ -207,3 +207,49 @@ Treshold Tmin Foronda ==> threshold Tmin Foronda ERA5Land
 
 17 ºC ==>   16.99 ºC
 
+
+Tendencia Tmax Pamplona
+=====================================
+
+y_ERA5(t) = -0.66 + 0.88 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.96
+
+Treshold Tmax Pamplona ==> threshold Tmax Pamplona ERA5Land
+===================================================================
+
+35 ºC ==>   30.30 ºC
+
+Tendencia Tmin Pamplona
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.91
+y_ERA5(t) = -0.18 + 0.95 T_OBS
+
+Treshold Tmin Pamplona ==> threshold Tmin Pamplona ERA5Land
+===================================================================
+
+17 ºC ==>   15.96 ºC
+
+
+Tendencia Tmax Cadreita
+=====================================
+
+y_ERA5(t) = -0.16 + 0.98 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.97,  0.94
+
+Treshold Tmax Cadreita ==> threshold Tmax Cadreita ERA5Land
+===================================================================
+
+35 ºC ==>   33.97 ºC
+
+Tendencia Tmin Cadreita
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.91
+y_ERA5(t) = 1.34 + 0.94 T_OBS
+
+Treshold Tmin Cadreita ==> threshold Tmin Cadreita ERA5Land
+===================================================================
+
+17 ºC ==>   17.28 ºC
+
