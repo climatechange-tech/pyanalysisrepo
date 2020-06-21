@@ -1,0 +1,1584 @@
+
+
+*******************************************************************************
+Sun Jun 21 21:04:08 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.9827046370e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.69e-04  1.44e-02   -6.612794e-01   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.69455e-09
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.661279        +/- 0.03434      (5.193%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:00 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.9827046370e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.69e-04  1.44e-02   -6.612794e-01   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.69455e-09
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.661279        +/- 0.03434      (5.193%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:01 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 5.9606092000e+04   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -2.89e-08  6.77e-03   -1.796484e-01   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -2.88512e-13
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -0.179648        +/- 0.02604      (14.49%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:08 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:26 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:27 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:32 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.3700876300e+04   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -4.88e-04  1.51e-02   -1.648223e-01   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -4.88392e-09
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.164822        +/- 0.0555       (33.67%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:33 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6596404400e+04   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   2 2.5212843498e+04  -3.67e-01  7.05e-02    1.340219e+00   9.373880e-01
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -3.66752e-06
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = 1.34022          +/- 0.03138      (2.341%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:38 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:05:38 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:06:34 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.3700876300e+04   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -4.88e-04  1.51e-02   -1.648223e-01   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -4.88392e-09
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.164822        +/- 0.0555       (33.67%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:06:34 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6596404400e+04   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   2 2.5212843498e+04  -3.67e-01  7.05e-02    1.340219e+00   9.373880e-01
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -3.66752e-06
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = 1.34022          +/- 0.03138      (2.341%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:06:55 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.9827046370e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.69e-04  1.44e-02   -6.612794e-01   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.69455e-09
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.661279        +/- 0.03434      (5.193%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:06:55 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 5.9606092000e+04   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -2.89e-08  6.77e-03   -1.796484e-01   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -2.88512e-13
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -0.179648        +/- 0.02604      (14.49%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:06:59 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:07:00 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:32 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.9827046370e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.69e-04  1.44e-02   -6.612794e-01   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.69455e-09
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.661279        +/- 0.03434      (5.193%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:33 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 5.9606092000e+04   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -2.89e-08  6.77e-03   -1.796484e-01   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -2.88512e-13
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -0.179648        +/- 0.02604      (14.49%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:35 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:36 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:40 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.3700876300e+04   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -4.88e-04  1.51e-02   -1.648223e-01   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -4.88392e-09
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.164822        +/- 0.0555       (33.67%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:41 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6596404400e+04   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   2 2.5212843498e+04  -3.67e-01  7.05e-02    1.340219e+00   9.373880e-01
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -3.66752e-06
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = 1.34022          +/- 0.03138      (2.341%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:44 2020
+
+
+FIT:    data read from 'Tdata_CADREITA_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 2.0797349270e+05   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -6.15e-03  1.51e-02   -3.130822e+00   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -6.15025e-08
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.13082         +/- 0.0555       (1.773%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:09:44 2020
+
+
+FIT:    data read from 'Tdata_CADREITA_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 1.0709374524e+05   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   3 2.5212843498e+04  -5.55e-07  7.05e-03   -1.625780e+00   9.373879e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -5.5536e-12
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -1.62578         +/- 0.03138      (1.93%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:13:31 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.9827046370e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.69e-04  1.44e-02   -6.612794e-01   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.69455e-09
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.661279        +/- 0.03434      (5.193%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:13:32 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 5.9606092000e+04   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -2.89e-08  6.77e-03   -1.796484e-01   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -2.88512e-13
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -0.179648        +/- 0.02604      (14.49%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:13:54 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.9827046370e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.69e-04  1.44e-02   -6.612794e-01   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.69455e-09
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.661279        +/- 0.03434      (5.193%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:13:54 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 5.9606092000e+04   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -2.89e-08  6.77e-03   -1.796484e-01   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -2.88512e-13
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -0.179648        +/- 0.02604      (14.49%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:16:33 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:16:34 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:16:41 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:16:41 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:17:02 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:17:02 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:17:48 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:17:49 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:18:11 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.5166677142e+05   0.00e+00  1.44e+01    1.000000e+00   1.000000e+00
+   3 2.4536726883e+04  -2.10e-03  1.44e-02   -3.627279e+00   8.846081e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24536.7
+rel. change during last iteration : -2.0989e-08
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4769
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.18124
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.62728         +/- 0.03434      (0.9468%)
+B               = 0.884608         +/- 0.001684     (0.1904%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.914  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:18:12 2020
+
+
+FIT:    data read from 'Tdata_PAMPLONA_AERO_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 11251
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6304149904e+05   0.00e+00  6.77e+00    1.000000e+00   1.000000e+00
+   3 3.1094945914e+04  -3.58e-07  6.77e-03   -3.145648e+00   9.493380e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31094.9
+rel. change during last iteration : -3.58124e-12
+
+degrees of freedom    (FIT_NDF)                        : 11249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.6626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.76424
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -3.14565         +/- 0.02604      (0.8278%)
+D               = 0.949338         +/- 0.002733     (0.2878%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.799  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:23:38 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 5.3700876300e+04   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -4.88e-04  1.51e-02   -1.648223e-01   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -4.88392e-09
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -0.164822        +/- 0.0555       (33.67%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:23:39 2020
+
+
+FIT:    data read from 'Tdata_CADREITA.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 2.6596404400e+04   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   2 2.5212843498e+04  -3.67e-01  7.05e-02    1.340219e+00   9.373880e-01
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -3.66752e-06
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = 1.34022          +/- 0.03138      (2.341%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:26:23 2020
+
+
+FIT:    data read from 'Tdata_CADREITA_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 2.0797349270e+05   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -6.15e-03  1.51e-02   -3.130822e+00   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -6.15025e-08
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.13082         +/- 0.0555       (1.773%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:26:23 2020
+
+
+FIT:    data read from 'Tdata_CADREITA_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 1.0709374524e+05   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   3 2.5212843498e+04  -5.55e-07  7.05e-03   -1.625780e+00   9.373879e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -5.5536e-12
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -1.62578         +/- 0.03138      (1.93%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:26:50 2020
+
+
+FIT:    data read from 'Tdata_CADREITA_sesgocorr.dat' u 1:2
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymax(x)
+	ymax(x)=A+B*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             B            
+   0 2.0797349270e+05   0.00e+00  1.51e+01    1.000000e+00   1.000000e+00
+   3 3.0754477557e+04  -6.15e-03  1.51e-02   -3.130822e+00   9.754057e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30754.5
+rel. change during last iteration : -6.15025e-08
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.92528
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.7067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = -3.13082         +/- 0.0555       (1.773%)
+B               = 0.975406         +/- 0.002598     (0.2663%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.925  1.000 
+
+
+*******************************************************************************
+Sun Jun 21 21:26:50 2020
+
+
+FIT:    data read from 'Tdata_CADREITA_sesgocorr.dat' u 3:4
+        format = x:z
+        #datapoints = 8299
+        residuals are weighted equally (unit weight)
+
+function used for fitting: ymin(x)
+	ymin(x)=C+D*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   C             D            
+   0 1.0709374524e+05   0.00e+00  7.05e+00    1.000000e+00   1.000000e+00
+   3 2.5212843498e+04  -5.55e-07  7.05e-03   -1.625780e+00   9.373879e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 25212.8
+rel. change during last iteration : -5.5536e-12
+
+degrees of freedom    (FIT_NDF)                        : 8297
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.74321
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.03879
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+C               = -1.62578         +/- 0.03138      (1.93%)
+D               = 0.937388         +/- 0.003162     (0.3373%)
+
+correlation matrix of the fit parameters:
+                C      D      
+C               1.000 
+D              -0.792  1.000 

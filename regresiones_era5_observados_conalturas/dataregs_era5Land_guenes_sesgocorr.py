@@ -130,7 +130,7 @@ slope2,intercept2,r2,p2,stderr2=ss.linregress(xT_min,yT_min)
 
 print("\nTendencia Tmax Gueñes\n=====================================\n")
 
-print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
+print("y_ERA5Land(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
 
 thres_max=35
@@ -144,7 +144,7 @@ thres_era5L_min = intercept2 + slope2*thres_min
 
 print("\nTendencia Tmin Gueñes\n=====================================\n")
 print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
-print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
+print("y_ERA5Land(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
 
 print("\nTreshold Tmin Gueñes ==> threshold Tmin Gueñes ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC\n" %(thres_min,thres_era5L_min))
