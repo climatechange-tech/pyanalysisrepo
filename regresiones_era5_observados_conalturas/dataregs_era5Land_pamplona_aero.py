@@ -114,13 +114,13 @@ print("\nTendencia Tmax Foronda\n=====================================\n")
 print("y_ERA5(t) = %.2f + %.2f T_OBS" %(intercept1,slope1))
 print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r1,r1**2))
 
-thres_max=35
+thres_max=36
 thres_era5L_max = intercept1 + slope1*thres_max
 
 print("\nTreshold Tmax Foronda ==> threshold Tmax Foronda ERA5Land\n===================================================================\n")
 print("%i ºC ==> %7.2f ºC" %(thres_max,thres_era5L_max))
 
-thres_min=17
+thres_min=18
 thres_era5L_min = intercept2 + slope2*thres_min
 
 print("\nTendencia Tmin Foronda\n=====================================\n")
