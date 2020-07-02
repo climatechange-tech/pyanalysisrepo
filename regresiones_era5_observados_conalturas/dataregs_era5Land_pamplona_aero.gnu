@@ -12,7 +12,7 @@ set multiplot layout 2,1 rowsfirst
 #Temperatura maxima
 #
 
-set title "{/:Bold {/=17 Linear regression of maximum temperature. Pamplona Airport (1986-2016)"
+set title "{/:Bold {/=16.5 Linear regression of maximum temperature. Pamplona Airport (1986-2016)"
 
 set xlabel "{/=14 AEMET observed temperature ({/Symbol \260}C)}"
 set ylabel "{/=14 ERA5 LAND temperature ({/Symbol \260}C)}"
@@ -34,7 +34,7 @@ p 'Tdata_PAMPLONA_AERO.dat' u 1:2 w p lt 7 ps 1 lc rgb "red" notitle,\
 #Temperatura maxima
 #
 
-set title "{/:Bold {/=17 Linear regression of minimum temperature. Pamplona Airport (1986-2016)"
+set title "{/:Bold {/=16.5 Linear regression of minimum temperature. Pamplona Airport (1986-2016)"
 
 unset label
 set xlabel "{/=14 AEMET observed temperature ({/Symbol \260}C)}"
