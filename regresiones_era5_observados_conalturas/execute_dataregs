@@ -1,0 +1,36 @@
+#! /bin/zsh
+
+station_names=(igeldo
+               hond-malkarroa
+               lekeitio
+               zumaia
+                    
+               bilbo_aero
+               guenes
+               elgoibar
+               zumarraga
+                   
+               foronda
+                   
+               pamplona_aero
+               cadreita
+               )
+
+rm "res.txt"
+rm "res_sesgocorr_zg0.txt"
+
+#Execute biased data files
+                          
+for file in "${station_names[@]}"
+do
+    python3 "dataregs_era5Land_""$file.py" >> "res.txt"
+done
+
+#Execute era5Land geopotential correction data files
+
+for file in "${station_names[@]}"
+do
+    python3 "dataregs_era5Land_""$file""_sesgocorr.py" >> "res_sesgocorr_zg0.txt
+    "
+done
+

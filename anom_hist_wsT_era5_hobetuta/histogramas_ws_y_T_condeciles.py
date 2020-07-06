@@ -34,8 +34,8 @@ ofiles=[]
 #Aeropuerto de Bilbo 
 ####################
 
-ifile_bilbo='../aemet-climatologias_diarias/aemet_BILBAO_AERO_corr.txt'
-ifile_bilbo_era5L='../T_Td_ws_ERA5Land/era5Land_BILBAO_AERO.txt'
+ifile_bilbo='../aemet-climatologias_diarias/aemet_BILBAO_AERO_corrected.txt'
+ifile_bilbo_era5L='../T_Td_ws_ERA5Land/era5Land_BILBO_AERO_dailymean.txt'
 
 data_bilbo=lectura_datos(ifile_bilbo)
 data_bilbo_era5=lectura_datos(ifile_bilbo_era5L)
@@ -69,7 +69,7 @@ ws_bilbo1[t0+1:,1]=data_bilbo_era5[t1:,-1]
 nmin1=int(np.nanmin(ws_bilbo1))
 nmax1=int(np.nanmax(ws_bilbo1))
 
-rangos_wsb=np.arange(nmin1-1,nmax1+1)
+rangos_wsb=np.arange(nmin1,nmax1)
 ws_bilbo_hist=np.histogram(ws_bilbo1[:,0],rangos_wsb)
 data_bilbo_era5_hist=np.histogram(ws_bilbo1[:,1],rangos_wsb)
 
@@ -113,8 +113,8 @@ for i in range(lwsdb):
 #Madrid, Cuatro Vientos
 #######################
 
-ifile_cv='../aemet-climatologias_diarias/aemet_CUATRO_VIENTOS_corr.txt'
-ifile_cv_era5L='../T_Td_ws_ERA5Land/era5Land_CUATRO_VIENTOS.txt'
+ifile_cv='../aemet-climatologias_diarias/aemet_CUATRO_VIENTOS_corrected.txt'
+ifile_cv_era5L='../T_Td_ws_ERA5Land/era5Land_CUATRO_VIENTOS_dailymean.txt'
 
 data_cv=lectura_datos(ifile_cv)
 data_cv_era5=lectura_datos(ifile_cv_era5L)
@@ -141,7 +141,7 @@ ws_cv1[:,1]=data_cv_era5[:,-1]
 nmin2=int(np.nanmin(ws_cv1))
 nmax2=int(np.nanmax(ws_cv1))
 
-rangos_wscv=np.arange(nmin2-1,nmax2+1)
+rangos_wscv=np.arange(nmin2,nmax2)
 ws_cv_hist=np.histogram(ws_cv1[:,0],rangos_wscv)
 ws_cv_era5_hist=np.histogram(ws_cv1[:,1],rangos_wscv)
 
@@ -216,7 +216,7 @@ T_bilbo1[t0+1:,1]=data_bilbo_era5[t1:,1]
 nmin3=int(np.nanmin(T_bilbo1))
 nmax3=int(np.nanmax(T_bilbo1))
 
-rangos_Tb=np.arange(nmin3-1,nmax3+1)
+rangos_Tb=np.arange(nmin3,nmax3)
 T_bilbo_hist=np.histogram(T_bilbo1[:,0],rangos_Tb)
 T_bilbo_era5_hist=np.histogram(T_bilbo1[:,1],rangos_Tb)
 
@@ -279,7 +279,7 @@ T_cv1[:,1]=data_cv_era5[:,1]
 nmin4=int(np.nanmin(T_cv1))
 nmax4=int(np.nanmax(T_cv1))
 
-rangos_Tcv=np.arange(nmin4-1,nmax4+1)
+rangos_Tcv=np.arange(nmin4,nmax4)
 T_cv_hist=np.histogram(T_cv1[:,0],rangos_Tcv)
 T_cv_era5_hist=np.histogram(T_cv1[:,1],rangos_Tcv)
 

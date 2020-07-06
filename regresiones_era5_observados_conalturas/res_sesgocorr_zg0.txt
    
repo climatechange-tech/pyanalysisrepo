@@ -1,16 +1,108 @@
+
+Tendencia Tmax Igeldo
+=====================================
+
+y_ERA5Land(t) = -2.83 + 1.01 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.92
+
+Treshold Tmax Igeldo ==> threshold Tmax Igeldo ERA5Land
+===================================================================
+
+30 ºC ==>   27.51 ºC
+
+Tendencia Tmin Igeldo
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
+y_ERA5Land(t) = -3.32 + 0.98 T_OBS
+
+Treshold Tmin Igeldo ==> threshold Tmin Igeldo ERA5Land
+===================================================================
+
+19 ºC ==>   15.35 ºC
+
+
+Tendencia Tmax Hondarribia
+=====================================
+
+y_ERA5Land(t) = -4.38 + 1.05 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.94,  0.89
+
+Treshold Tmax Hondarribia ==> threshold Tmax Hondarribia ERA5Land
+===================================================================
+
+30 ºC ==>   27.03 ºC
+
+Tendencia Tmin Hondarribia
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.93
+y_ERA5Land(t) = -2.41 + 0.95 T_OBS
+
+Treshold Tmin Hondarribia ==> threshold Tmin Hondarribia ERA5Land
+===================================================================
+
+19 ºC ==>   15.66 ºC
+
+
+Tendencia Tmax Lekeitio
+=====================================
+
+y_ERA5Land(t) = -2.72 + 1.07 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.93,  0.87
+
+Treshold Tmax Lekeitio ==> threshold Tmax Lekeitio ERA5Land
+===================================================================
+
+30 ºC ==>   29.31 ºC
+
+Tendencia Tmin Lekeitio
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
+y_ERA5Land(t) = -2.40 + 1.01 T_OBS
+
+Treshold Tmin Lekeitio ==> threshold Tmin Lekeitio ERA5Land
+===================================================================
+
+19 ºC ==>   16.71 ºC
+
+
+Tendencia Tmax Zumaia
+=====================================
+
+y_ERA5Land(t) = -5.15 + 1.06 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.94,  0.88
+
+Treshold Tmax Zumaia ==> threshold Tmax Zumaia ERA5Land
+===================================================================
+
+30 ºC ==>   26.79 ºC
+
+Tendencia Tmin Zumaia
+=====================================
+
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.93
+y_ERA5Land(t) = -3.08 + 0.96 T_OBS
+
+Treshold Tmin Zumaia ==> threshold Tmin Zumaia ERA5Land
+===================================================================
+
+19 ºC ==>   15.20 ºC
+
 Bilbo: Aemet eta ERA5 datuen matrizeak EZ DIRA tamaina berekoak: aemet ==> 11251 < ERA5 ==> 11323
 Bilbon behatutako eta era5Land datu-baseak prozesatutako datuen matrizeak tamaina berekoak dira 
 
 Tendencia Tmax Aeropuerto de Bilbo
 =====================================
 
-y_ERA5(t) = 0.09 + 0.81 T_OBS
+y_ERA5Land(t) = 0.09 + 0.81 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.92
 
 Tendencia Tmin Aeropuerto de Bilbo
 =====================================
 
-y_ERA5(t) = 2.22 + 0.83 T_OBS
+y_ERA5Land(t) = 2.22 + 0.83 T_OBS
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.94,  0.89
 
 Treshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land
@@ -24,33 +116,10 @@ Treshold Tmin Aeropuerto de Bilbo ==> threshold Tmin Aeropuerto de Bilbo ERA5Lan
 17 ºC ==>   16.37 ºC
 
 
-Tendencia Tmax Elgoibar
-=====================================
-
-y_ERA5(t) = -5.77 + 1.04 T_OBS
-Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.93
-
-Treshold Tmax Elgoibar ==> threshold Tmax Elgoibar ERA5Land
-===================================================================
-
-35 ºC ==>   30.53 ºC
-
-Tendencia Tmin Elgoibar
-=====================================
-
-Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.95,  0.91
-y_ERA5(t) = -4.56 + 1.00 T_OBS
-
-Treshold Tmin Elgoibar ==> threshold Tmin Elgoibar ERA5Land
-===================================================================
-
-17 ºC ==>   12.43 ºC
-
-
 Tendencia Tmax Gueñes
 =====================================
 
-y_ERA5(t) = -2.06 + 0.94 T_OBS
+y_ERA5Land(t) = -2.06 + 0.94 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.95
 
 Treshold Tmax Gueñes ==> threshold Tmax Gueñes ERA5Land
@@ -62,7 +131,7 @@ Tendencia Tmin Gueñes
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
-y_ERA5(t) = -1.94 + 0.98 T_OBS
+y_ERA5Land(t) = -1.94 + 0.98 T_OBS
 
 Treshold Tmin Gueñes ==> threshold Tmin Gueñes ERA5Land
 ===================================================================
@@ -70,102 +139,33 @@ Treshold Tmin Gueñes ==> threshold Tmin Gueñes ERA5Land
 17 ºC ==>   14.80 ºC
 
 
-Tendencia Tmax Hondarribia
+Tendencia Tmax Elgoibar
 =====================================
 
-y_ERA5(t) = -4.38 + 1.05 T_OBS
-Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.94,  0.89
+y_ERA5Land(t) = -5.77 + 1.04 T_OBS
+Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.93
 
-Treshold Tmax Hondarribia ==> threshold Tmax Hondarribia ERA5Land
+Treshold Tmax Elgoibar ==> threshold Tmax Elgoibar ERA5Land
 ===================================================================
 
-30 ºC ==>   27.03 ºC
+35 ºC ==>   30.53 ºC
 
-Tendencia Tmin Hondarribia
+Tendencia Tmin Elgoibar
 =====================================
 
-Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.93
-y_ERA5(t) = -2.41 + 0.95 T_OBS
+Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.95,  0.91
+y_ERA5Land(t) = -4.56 + 1.00 T_OBS
 
-Treshold Tmin Hondarribia ==> threshold Tmin Hondarribia ERA5Land
+Treshold Tmin Elgoibar ==> threshold Tmin Elgoibar ERA5Land
 ===================================================================
 
-19 ºC ==>   15.66 ºC
-
-
-Tendencia Tmax Igeldo
-=====================================
-
-y_ERA5(t) = -2.83 + 1.01 T_OBS
-Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.96,  0.92
-
-Treshold Tmax Igeldo ==> threshold Tmax Igeldo ERA5Land
-===================================================================
-
-30 ºC ==>   27.51 ºC
-
-Tendencia Tmin Igeldo
-=====================================
-
-Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
-y_ERA5(t) = -3.32 + 0.98 T_OBS
-
-Treshold Tmin Igeldo ==> threshold Tmin Igeldo ERA5Land
-===================================================================
-
-19 ºC ==>   15.35 ºC
-
-
-Tendencia Tmax Lekeitio
-=====================================
-
-y_ERA5(t) = -2.72 + 1.07 T_OBS
-Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.93,  0.87
-
-Treshold Tmax Lekeitio ==> threshold Tmax Lekeitio ERA5Land
-===================================================================
-
-30 ºC ==>   29.31 ºC
-
-Tendencia Tmin Lekeitio
-=====================================
-
-Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.92
-y_ERA5(t) = -2.40 + 1.01 T_OBS
-
-Treshold Tmin Lekeitio ==> threshold Tmin Lekeitio ERA5Land
-===================================================================
-
-19 ºC ==>   16.71 ºC
-
-
-Tendencia Tmax Zumaia
-=====================================
-
-y_ERA5(t) = -5.15 + 1.06 T_OBS
-Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.94,  0.88
-
-Treshold Tmax Zumaia ==> threshold Tmax Zumaia ERA5Land
-===================================================================
-
-30 ºC ==>   26.79 ºC
-
-Tendencia Tmin Zumaia
-=====================================
-
-Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.93
-y_ERA5(t) = -3.08 + 0.96 T_OBS
-
-Treshold Tmin Zumaia ==> threshold Tmin Zumaia ERA5Land
-===================================================================
-
-19 ºC ==>   15.20 ºC
+17 ºC ==>   12.43 ºC
 
 
 Tendencia Tmax Zumarraga
 =====================================
 
-y_ERA5(t) = -2.25 + 0.92 T_OBS
+y_ERA5Land(t) = -2.25 + 0.92 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.97
 
 Treshold Tmax Zumarraga ==> threshold Tmax Zumarraga ERA5Land
@@ -177,7 +177,7 @@ Tendencia Tmin Zumarraga
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.93
-y_ERA5(t) = -2.61 + 0.99 T_OBS
+y_ERA5Land(t) = -2.61 + 0.99 T_OBS
 
 Treshold Tmin Zumarraga ==> threshold Tmin Zumarraga ERA5Land
 ===================================================================
@@ -188,7 +188,7 @@ Treshold Tmin Zumarraga ==> threshold Tmin Zumarraga ERA5Land
 Tendencia Tmax Foronda
 =====================================
 
-y_ERA5(t) = -2.83 + 0.89 T_OBS
+y_ERA5Land(t) = -2.83 + 0.89 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.96
 
 Treshold Tmax Foronda ==> threshold Tmax Foronda ERA5Land
@@ -200,7 +200,7 @@ Tendencia Tmin Foronda
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.93,  0.87
-y_ERA5(t) = -2.02 + 0.94 T_OBS
+y_ERA5Land(t) = -2.02 + 0.94 T_OBS
 
 Treshold Tmin Foronda ==> threshold Tmin Foronda ERA5Land
 ===================================================================
@@ -211,7 +211,7 @@ Treshold Tmin Foronda ==> threshold Tmin Foronda ERA5Land
 Tendencia Tmax Pamplona
 =====================================
 
-y_ERA5(t) = -3.63 + 0.88 T_OBS
+y_ERA5Land(t) = -3.63 + 0.88 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.98,  0.96
 
 Treshold Tmax Pamplona ==> threshold Tmax Pamplona ERA5Land
@@ -223,7 +223,7 @@ Tendencia Tmin Pamplona
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.91
-y_ERA5(t) = -3.15 + 0.95 T_OBS
+y_ERA5Land(t) = -3.15 + 0.95 T_OBS
 
 Treshold Tmin Pamplona ==> threshold Tmin Pamplona ERA5Land
 ===================================================================
@@ -234,7 +234,7 @@ Treshold Tmin Pamplona ==> threshold Tmin Pamplona ERA5Land
 Tendencia Tmax Cadreita
 =====================================
 
-y_ERA5(t) = -3.13 + 0.98 T_OBS
+y_ERA5Land(t) = -3.13 + 0.98 T_OBS
 Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land:  0.97,  0.94
 
 Treshold Tmax Cadreita ==> threshold Tmax Cadreita ERA5Land
@@ -246,7 +246,7 @@ Tendencia Tmin Cadreita
 =====================================
 
 Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land:  0.96,  0.91
-y_ERA5(t) = -1.63 + 0.94 T_OBS
+y_ERA5Land(t) = -1.63 + 0.94 T_OBS
 
 Treshold Tmin Cadreita ==> threshold Tmin Cadreita ERA5Land
 ===================================================================

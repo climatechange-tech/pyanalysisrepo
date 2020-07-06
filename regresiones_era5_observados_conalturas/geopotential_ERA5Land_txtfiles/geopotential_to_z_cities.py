@@ -48,6 +48,6 @@ if len(times)==1:
         ofile_ind.close()
 
         z_real=latlondict[city][-1]
-        ofile.write("%s %.2f %i\n" %(city,z_era5L,z_real))
+        ofile.write("%s: %.0f %i\n" %(city,z_era5L,z_real))
 
 ofile.close()
