@@ -30,7 +30,6 @@ done
 
 for file in "${station_names[@]}"
 do
-    python3 "dataregs_era5Land_""$file""_sesgocorr.py" >> "res_sesgocorr_zg0.txt
-    "
+    python3 "dataregs_era5Land_""$file""_sesgocorr.py" >> "res_sesgocorr_zg0.txt"
 done
 

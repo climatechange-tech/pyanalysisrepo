@@ -105,11 +105,6 @@ horas_era5=np.array(horas_era5,dtype=np.int64)
 #horas_era5=np.array(horas_era5,dtype='int64')
 #horas_era5=np.array(horas_era5)
 
-"""
-for txtf in 
-
-T_gar_cumul=np.zeros((lTgar,3),'d')
-"""
 
 for t in range(lgarf):
     for te in range(lgaref):
@@ -141,17 +136,30 @@ for t in range(lgarf):
                 ipaprox=np.where(T_gar_era5[:,0]==paprox)[0][0]
                           
             #Preferencia de presiones: Euskalmet, por ser datos observados,
-            #PERO las alturas de ERA5 son mas redondeadas, por lo que
-            #estos datos estaran repetidos en algunas alturas,
-            #y no se puede usar np.unique para remover los elementos repetidos.
+            #y se interpolan las presiones de ERA5 a ellas.
+            # 
+            #No tiene sentido darle preferencia a ERA5 e interpolar
+            #los datos observados al reanalisis, aparte porque se pueden
+            #perder hasta un 98 % de datos!
             #
-            #Por tanto, se cambia la preferencia a ERA5,
-            #aunque el numero de datos se reduzca en un 25 pciento
-            #MODIFICARLO!!!!!!
+            #La diferencia entre los niveles de datos observados
+            #es mas pequeña de la que hay entre las de ERA5,
+            #con lo que se escogerian niveles de ERA5 mas de una vez.
+            #Esos datos estarian repetidos en algunas alturas,
+            #pero no se podria usar "np.unique" para remover los elementos repetidos,
+            #porque es muy dificil que existan dos o mas filas iguales.
+            #
+            #Se observa una buena correlacion, por lo que
+            #los datos con anomalias grandes se convertiran a "nan".
+            
+            
                 T_gar_comp[ymd][ip,0]=T_gar[ip,0]
                 T_gar_comp[ymd][ip,1]=T_gar[ip,2]
                 T_gar_comp[ymd][ip,2]=T_gar_era5[ipaprox,ihora_gar_era5+1]
                 T_gar_comp[ymd][ip,3]=T_gar_comp[ymd][ip,1]-T_gar_comp[ymd][ip,2]
+                
+                if T_gar_comp[ymd][ip,3] > 2.5:
+                    T_gar_comp[ymd][ip,:] = np.nan
                                
 
 keys_gar=T_gar_comp.keys()
@@ -160,8 +168,9 @@ for k in keys_gar:
     ymd=k
     lTgar=len(T_gar_comp[ymd])
     lTgar_col=len(T_gar_comp[ymd][0])
-    
-    os.chdir("txtfiles")
+
+    #Nahiko korrelazio ona. Datuok errepikatuta daudenez,
+    #eta buelta asko eman ondoren behatutako datuak
 
     ofile_gar_comp=open('euskalmet-era5_TP_GAUTEGIZ_ARTEAGA_'+ymd+'.txt','w')
     ofiles.append(ofile_gar_comp)
@@ -172,7 +181,6 @@ for k in keys_gar:
             if ipcol==lTgar_col-1:
                 ofile_gar_comp.write("\n")
                 
-    os.chdir("..")
 
 #
 #Aeropuerto de Madrid
@@ -241,17 +249,34 @@ for t in range(lcvf):
             for ip in range(lTcv):
                 paprox=aproximar(T_cv_era5[:,0],T_cv[ip,0])
                 ipaprox=np.where(T_cv_era5[:,0]==paprox)[0][0]
-                
+               
+            #Preferencia de presiones: AEMET, por ser datos observados,
+            #y se interpolan las presiones de ERA5 a ellas.
+            # 
+            #No tiene sentido darle preferencia a ERA5 e interpolar
+            #los datos observados al reanalisis, aparte porque se pueden
+            #perder hasta un 50 % de datos, aunque la diferencia
+            #de la cantidad de datos es mucho mas pequegna
+            #que en el caso anterior.
+            #
+            #La diferencia entre los niveles de datos observados
+            #es mas pequeña de la que hay entre las de ERA5,
+            #con lo que se escogerian niveles de ERA5 mas de una vez.
+            #Esos datos estarian repetidos en algunas alturas,
+            #pero no se podria usar "np.unique" para remover los elementos repetidos,
+            #porque es muy dificil que existan dos o mas filas iguales.
+            #
+            #Se observa una buena correlacion, por lo que
+            #los datos con anomalias grandes se convertiran a "nan".
 
-            #Preferencia de presiones: aemet, por ser datos observados
-            #Puede que cada presion que se seleccione de la tabla de datos de Euskalmet,
-            #haya dos igualmente proximas de ERA5, 
-            #por lo que se podrian repetir los datos de esta ultima.
 
                 T_cv_comp[ymd][ip,0]=T_cv[ip,0]
                 T_cv_comp[ymd][ip,1]=T_cv[ip,2]
                 T_cv_comp[ymd][ip,2]=T_cv_era5[ipaprox,ihora_cv_era5+1]
                 T_cv_comp[ymd][ip,3]=T_cv_comp[ymd][ip,1]-T_cv_comp[ymd][ip,2]
+                
+                if T_gar_comp[ymd][ip,3] > 2.5:
+                    T_gar_comp[ymd][ip,:] = np.nan
 
 
 keys_cv=T_cv_comp.keys()
@@ -261,8 +286,6 @@ for k in keys_cv:
 
     lTcv=len(T_cv_comp[ymd])
     lTcv_col=len(T_cv_comp[ymd][0])
-    
-    os.chdir("txtfiles")
 
     ofile_cv_comp=open("aemet-era5_TP_MADRID_AERO_"+ymd+".txt",'w')
     ofiles.append(ofile_cv_comp)
@@ -272,7 +295,5 @@ for k in keys_cv:
             ofile_cv_comp.write("%8.2f" %T_cv_comp[ymd][ip,ipcol])
             if ipcol==lTcv_col-1:
                 ofile_cv_comp.write("\n")
-
-    os.chdir("..")
 
 close_files(ofiles)
