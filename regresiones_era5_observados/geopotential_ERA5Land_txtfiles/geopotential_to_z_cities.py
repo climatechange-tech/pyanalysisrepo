@@ -2,7 +2,7 @@ import netCDF4 as n4
 import numpy as np
 import cftime
 
-inc=n4.Dataset("../../../geopotential_ERA5Land_ncfiles/geopotential_1279l4_0.1x0.1.nc")
+inc=n4.Dataset("../../../geopotential_ERA5Land_ncfiles/geo_1279l4_0.1x0.1.grib2_v4_unpack.nc")
 
 lats_era5L=inc.variables["latitude"][:]
 lons_era5L=inc.variables["longitude"][:]
