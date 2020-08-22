@@ -29,7 +29,7 @@ latlondict={"BILBAO_AEROPUERTO":              [-2.90643,43.29806,42],\
 }
 
 
-cities=latlondict.keys()
+cities=list(latlondict.keys())
 
 ofile=open("geopotential_to_z_cities.txt",'w')
 

@@ -29,7 +29,7 @@ ymax(x)=A+B*x
 fit ymax(x) 'Tdata_ELGOIBAR_sesgocorr.dat' u 1:2 via A,B
 
 p 'Tdata_ELGOIBAR_sesgocorr.dat' u 1:2 w p lt 7 ps 1 lc rgb "red" notitle,\
-  ymax(x) w l lw 3 t "T_{ERA5} = -5.77 + 1.04T_{OBS} ({/Symbol \260}C)",30.53 lw 2 lc rgb "black" notitle
+  ymax(x) w l lw 3 t "T_{ERA5} = -0.89 + 1.04T_{OBS} ({/Symbol \260}C)",35.41 lw 2 lc rgb "black" notitle
 
 #
 #Temperatura minima
@@ -44,7 +44,7 @@ set xlabel "{/=14 AEMET observed temperature ({/Symbol \260}C)}"
 set ylabel "{/=14 ERA5 LAND temperature ({/Symbol \260}C)}"
 
 set label at graph 0.59,0.27 "{/:Bold r_{Tmin} = 0.95}"
-set label at graph 0.1,0.83 "{/:Bold 12.4 ({/Symbol \260}C)}"
+set label at graph 0.1,0.83 "{/:Bold 17.3 ({/Symbol \260}C)}"
 set label at graph 0.67,0.1 "{/:Bold 17 ({/Symbol \260}C)}"
 
 set arrow front from 17, graph 0 to 17, graph 1 nohead lw 2
@@ -54,7 +54,7 @@ ymin(x)=C+D*x
 fit ymin(x) 'Tdata_ELGOIBAR_sesgocorr.dat' u 3:4 via C,D
 
 p 'Tdata_ELGOIBAR_sesgocorr.dat' u 3:4 w p lt 7 ps 1 lc rgb "red" notitle,\
-  ymin(x) w l lw 3 t "T_{ERA5} = -4.56 + 1.00T_{OBS} ({/Symbol \260}C)",12.43 lw 2 lc rgb "black" notitle
+  ymin(x) w l lw 3 t "T_{ERA5} = 0.32 + 1.00T_{OBS} ({/Symbol \260}C)",17.31 lw 2 lc rgb "black" notitle
 
 
 unset multiplot

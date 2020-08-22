@@ -11,7 +11,7 @@ for f in files:
     ofile=open(file_noext+"_corrected.txt","w")
     for line in ifile:
         if "," in line:
-            
+
             l=list(line)
             ll=len(l)
             index=[]

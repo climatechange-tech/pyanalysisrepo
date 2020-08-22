@@ -1,0 +1,1 @@
+Direktorio honetan dauden fitxategi guztiek direktorio bat gehiagoko helbide erlatiboan dauden datu fitxategiei egiten diete erreferentzia. Beraz, fitxategi hauek erabili izanez gero, mugitu direktorio honetakoeduki osoa direktorio bat gora, hau da mv * ../

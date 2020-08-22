@@ -17,7 +17,7 @@ set title "{/:Bold {/=17 Linear regression of maximum temperature. Lekeitio (199
 set xlabel "{/=14 AEMET observed temperature ({/Symbol \260}C)}"
 set ylabel "{/=14 ERA5 LAND temperature ({/Symbol \260}C)}"
 
-set label at graph 0.68,0.4 "{/:Bold r_{Tmax} = 0.93}"
+set label at graph 0.58,0.34 "{/:Bold r_{Tmax} = 0.93}"
 set label at graph 0.1,0.8 "{/:Bold 29.4 ({/Symbol \260}C)}"
 set label at graph 0.78,0.1 "{/:Bold 30 ({/Symbol \260}C)}"
 

@@ -25,4 +25,3 @@ for f in gnufiles:
         ofile.write(line)
     ofile.close
     ifile.close
-

@@ -16,20 +16,28 @@ station_names=(igeldo
                cadreita
                )
 
+echo "Removing result files..."
+
 rm "res.txt"
 rm "res_sesgocorr_zg0.txt"
 
 #Execute biased data files
+
+echo "Calculating correctionless data...\n"
                           
 for file in "${station_names[@]}"
 do
+    echo "$file"
     python3 "dataregs_era5Land_""$file.py" >> "res.txt"
 done
 
 #Execute era5Land geopotential correction data files
 
+echo "Calculating bias correction...\n"
+
 for file in "${station_names[@]}"
 do
+    echo "$file"
     python3 "dataregs_era5Land_""$file""_sesgocorr.py" >> "res_sesgocorr_zg0.txt"
 done
 

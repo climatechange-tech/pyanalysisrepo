@@ -12,12 +12,10 @@ x=(np.mean(np.random.normal(size=1))).round(3)
 
 val_aprox=aproximar(M,x).round(8)
 iaprox=np.where(M==val_aprox)[0][0]
-print("M=",M,"\n\nValor mas cercano de",x,"es",val_aprox, "con índice",iaprox)
+print(("M=",M,"\n\nValor mas cercano de",x,"es",val_aprox, "con índice",iaprox))
 
 Mdf=pd.DataFrame(M)
 
 iaprox1=Mdf[Mdf==x].index[0]
 
-print("\nM_dataframe\n",Mdf,"\n\nValor mas cercano de",x,"usando Pandas es",val_aprox, "con índice",iaprox)
-
-
+print(("\nM_dataframe\n",Mdf,"\n\nValor mas cercano de",x,"usando Pandas es",val_aprox, "con índice",iaprox))

@@ -20,37 +20,37 @@ import csv
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
 
-with open('bizkaia-bilbao_aeropuerto-1986_1989.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-1986_1989.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('bizkaia-bilbao_aeropuerto-1990_1992.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-1990_1992.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-bilbao_aeropuerto-1993_1997.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-1993_1997.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-bilbao_aeropuerto-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-bilbao_aeropuerto-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-bilbao_aeropuerto-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-bilbao_aeropuerto-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-bilbao_aeropuerto-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -72,27 +72,27 @@ for irow in range(len(df)):
 #GUEÑES######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('bizkaia-guennes-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-guennes-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('bizkaia-guennes-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-guennes-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-guennes-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-guennes-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-guennes-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-guennes-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-guennes-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-guennes-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -105,33 +105,33 @@ for irow in range(len(df)):
         ofile_gue.write("%s " %df.loc[irow][ivar])
         if ivar == len(df.loc[0])-1:
             ofile_gue.write("\n")
-            
+
 
 
 #LEKEITIO######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('bizkaia-lekeitio-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-lekeitio-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('bizkaia-lekeitio-1998-01-03_2002.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-lekeitio-1998-01-03_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-lekeitio-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-lekeitio-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-lekeitio-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-lekeitio-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('bizkaia-lekeitio-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('bizkaia-lekeitio-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -149,12 +149,12 @@ for irow in range(len(df)):
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
 
-with open('gipuzkoa-ss-aeropuerto-2011_2015-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-ss-aeropuerto-2011_2015-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('gipuzkoa-ss-aeropuerto-2015-12-30_2016.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-ss-aeropuerto-2015-12-30_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -176,37 +176,37 @@ for irow in range(len(df)):
 #IGELDO######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('gipuzkoa-igeldo-1986_1989.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-1986_1989.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('gipuzkoa-igeldo-1990_1992.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-1990_1992.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-igeldo-1993_1997.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-1993_1997.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-igeldo-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-igeldo-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-igeldo-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-igeldo-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-igeldo-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -220,42 +220,42 @@ for irow in range(len(df)):
         ofile_igeldo.write("%s " %df.loc[irow][ivar])
         if ivar == len(df.loc[0])-1:
             ofile_igeldo.write("\n")
-            
-            
+
+
 #HONDARRIBIA-MALKARROA######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('gipuzkoa-hondarribia-malkarroa-1986_1989.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-1986_1989.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('gipuzkoa-hondarribia-malkarroa-1990_1992.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-1990_1992.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-hondarribia-malkarroa-1993_1997.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-1993_1997.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-hondarribia-malkarroa-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-hondarribia-malkarroa-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-hondarribia-malkarroa-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-hondarribia-malkarroa-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-hondarribia-malkarroa-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -268,32 +268,32 @@ for irow in range(len(df)):
         ofile_hond.write("%s " %df.loc[irow][ivar])
         if ivar == len(df.loc[0])-1:
             ofile_hond.write("\n")
-            
+
 
 #ELGOIBAR######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('gipuzkoa-elgoibar-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-elgoibar-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('gipuzkoa-elgoibar-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-elgoibar-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-elgoibar-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-elgoibar-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-elgoibar-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-elgoibar-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-elgoibar-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-elgoibar-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -306,22 +306,22 @@ for irow in range(len(df)):
         ofile_elg.write("%s " %df.loc[irow][ivar])
         if ivar == len(df.loc[0])-1:
             ofile_elg.write("\n")
-            
+
 
 #ZUMARRAGA######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('gipuzkoa-zumarraga-2007-12-19_2007-12-31.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumarraga-2007-12-19_2007-12-31.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('gipuzkoa-zumarraga-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumarraga-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-zumarraga-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumarraga-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -339,28 +339,28 @@ for irow in range(len(df)):
 #ZUMAIA######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('gipuzkoa-zumaia-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumaia-1997-04-01_1997-12-31.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('gipuzkoa-zumaia-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumaia-1998_2002.json', 'r', encoding='latin1') as json_file:
 
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-zumaia-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumaia-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-zumaia-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumaia-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('gipuzkoa-zumaia-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('gipuzkoa-zumaia-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -379,37 +379,37 @@ for irow in range(len(df)):
 #FORONDA-TXOKIZA######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('araba-foronda-txokiza-1986_1989.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-1986_1989.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('araba-foronda-txokiza-1990_1992.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-1990_1992.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('araba-foronda-txokiza-1993_1997.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-1993_1997.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('araba-foronda-txokiza-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('araba-foronda-txokiza-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('araba-foronda-txokiza-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('araba-foronda-txokiza-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('araba-foronda-txokiza-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -427,37 +427,37 @@ for irow in range(len(df)):
 #PAMPLONA AEROPUERTO######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('nafarroa-pamplona-aeropuerto-1986_1989.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-1986_1989.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('nafarroa-pamplona-aeropuerto-1990_1992.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-1990_1992.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-pamplona-aeropuerto-1993_1997.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-1993_1997.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-pamplona-aeropuerto-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-pamplona-aeropuerto-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-pamplona-aeropuerto-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-pamplona-aeropuerto-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-pamplona-aeropuerto-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
@@ -475,32 +475,32 @@ for irow in range(len(df)):
 #NAFARROA-CADREITA######################################################################################
 ###LECTURA DE DATOS Y CREACIóN DE DATAFRAME###
 #Leer json con las observaciones de Aemet
-with open('nafarroa-cadreita-1991_1992.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-cadreita-1991_1992.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 #Creación del dataframe con los datos_y_calculos
 df = pd.DataFrame(data)
 
-with open('nafarroa-cadreita-1993_1997.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-cadreita-1993_1997.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-cadreita-1998_2002.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-cadreita-1998_2002.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-cadreita-2003_2007.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-cadreita-2003_2007.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-cadreita-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-cadreita-2008_2012-12-30.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)
 
-with open('nafarroa-cadreita-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:  
+with open('nafarroa-cadreita-2012-12-31_2016.json', 'r', encoding='latin1') as json_file:
     data = json.load(json_file)
 next_df = pd.DataFrame(data)
 df = pd.concat([df, next_df],ignore_index=True)

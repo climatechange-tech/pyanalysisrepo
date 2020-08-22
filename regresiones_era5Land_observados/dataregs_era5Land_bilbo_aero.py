@@ -21,18 +21,18 @@ def listas(hilera):
         lista.append(hilera[i])
     return lista
 
-    
+
 def close_files(list_files):
     lf=len(list_files)
     for i in range(lf):
         list_files[i]
 
 ofiles=[]
-    
+
 ############################
 #Guardar datos en dataframes
 ############################
-   
+
 ifile_bilbo="../aemet-climatologias_diarias/aemet_BILBAO_AERO_corrected.txt"
 ifile_bilbo_era5L="../T_Td_ws_ERA5Land/era5Land_BILBO_AERO_dailymean.txt"
 
@@ -56,7 +56,7 @@ df_bilbo_era5L=pd.DataFrame(data_bilbo_era5L,columns=varlist_bilbo_era5L)
 df_bilbo_era5L.values[:,1:]=df_bilbo_era5L.values[:,1:].astype(np.float64)
 
 ldfb=len(df_bilbo)
-ldfbe=len(df_bilbo_era5L)        
+ldfbe=len(df_bilbo_era5L)
 
 #
 #Faltan datos de aemet entre [2000-11-20 : 2001-02-01]
@@ -71,10 +71,10 @@ ifalta=df_anom[df_anom.fechas_bilbo==df_anom.fechas_bilbo_era5L].index[-1]
 
 try:
     igero=df_anom[df_anom.loc[ifalta+1].fechas_bilbo==df_anom.fechas_bilbo_era5L].index[0]
-    print("Bilbo: Aemet eta ERA5 datuen matrizeak EZ DIRA tamaina berekoak: aemet ==> %i < ERA5 ==> %i" %(ldfb,ldfbe))
+    print(("Bilbo: Aemet eta ERA5 datuen matrizeak EZ DIRA tamaina berekoak: aemet ==> %i < ERA5 ==> %i" %(ldfb,ldfbe)))
     gap=abs(igero-ifalta)
 except:
-    raise KeyError("Bilbo: Aemet eta ERA5 datuen matrizeak jada tamaina berekoak dira")    
+    raise KeyError("Bilbo: Aemet eta ERA5 datuen matrizeak jada tamaina berekoak dira")
 
 df_bilbo1=pd.DataFrame(columns=varlist_bilbo)
 
@@ -100,8 +100,8 @@ for t in range(ifalta+1,ifalta+gap):
     next_arr=[]
     for t1 in range(len(df_bilbo.loc[0])):
         next_arr.append(np.nan)
-        
-    next_arr=np.array(next_arr)[np.newaxis,:]   
+
+    next_arr=np.array(next_arr)[np.newaxis,:]
     next_df_bilbo1=pd.DataFrame(next_arr,columns=varlist_bilbo)
 
     df_bilbo1=pd.concat([df_bilbo1,next_df_bilbo1],ignore_index=True)
@@ -111,23 +111,23 @@ for t in range(ifalta+1,ifalta+gap):
 for t in range(ifalta+gap,ldfbe):
     next_arr=[]
     for t1 in range(len(df_bilbo.loc[0])):
-        next_arr.append(df_bilbo.loc[t-gap+1][t1])        
+        next_arr.append(df_bilbo.loc[t-gap+1][t1])
 
     next_arr=np.array(next_arr)[np.newaxis,:]
     next_df_bilbo1=pd.DataFrame(next_arr,columns=varlist_bilbo)
 
     df_bilbo1=pd.concat([df_bilbo1,next_df_bilbo1],ignore_index=True)
-   
+
 df_bilbo1.values[:,1:]=df_bilbo1.values[:,1:].astype(np.float64)
-   
+
 ldfb1=len(df_bilbo1)
 
 if ldfb1==ldfbe:
     print("Bilbon behatutako eta era5Land datu-baseak prozesatutako datuen matrizeak tamaina berekoak dira ")
 else:
     raise ValueError("Bilbon behatutako eta era5Land datu-baseak prozesatutako datuen matrizeak EZ DIRA tamaina berekoak")
-    
-    
+
+
 df_bilbo_era5L.values[:,1:]=df_bilbo_era5L.values[:,1:].astype(np.float64)
 
 df_bilbo1=pd.concat([df_bilbo1,df_bilbo_era5L[df_bilbo_era5L.columns[1:]]],ignore_index=False,axis=1)
@@ -187,12 +187,12 @@ print("Coeficiente de correlacion y determinacion de T entre aemet-era5Land: %5.
 """
 
 print("\nTendencia Tmax Aeropuerto de Bilbo\n=====================================\n")
-print("y_ERA5Land(t) = %.2f + %.2f T_OBS" %(intercept2,slope2))
-print("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2))
+print(("y_ERA5Land(t) = %.2f + %.2f T_OBS" %(intercept2,slope2)))
+print(("Coeficiente de correlacion y determinacion de Tmax entre aemet-era5Land: %5.2f, %5.2f" %(r2,r2**2)))
 
 print("\nTendencia Tmin Aeropuerto de Bilbo\n=====================================\n")
-print("y_ERA5Land(t) = %.2f + %.2f T_OBS" %(intercept3,slope3))
-print("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2))
+print(("y_ERA5Land(t) = %.2f + %.2f T_OBS" %(intercept3,slope3)))
+print(("Coeficiente de correlacion y determinacion de Tmin entre aemet-era5Land: %5.2f, %5.2f" %(r3,r3**2)))
 
 """
 print("\nTendencia wspeed Aeropuerto de Bilbo\n=====================================\n")
@@ -207,10 +207,10 @@ thres_bilbo_era5L_max = intercept2 + slope2*thres_bilbo_max
 thres_bilbo_era5L_min = intercept3 + slope3*thres_bilbo_min
 
 print("\nTreshold Tmax Aeropuerto de Bilbo ==> threshold Tmax Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
-print("%i ºC ==> %7.2f ºC" %(thres_bilbo_max,thres_bilbo_era5L_max))
+print(("%i ºC ==> %7.2f ºC" %(thres_bilbo_max,thres_bilbo_era5L_max)))
 
 print("\nTreshold Tmin Aeropuerto de Bilbo ==> threshold Tmin Aeropuerto de Bilbo ERA5Land\n===================================================================\n")
-print("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min))
+print(("%i ºC ==> %7.2f ºC\n" %(thres_bilbo_min,thres_bilbo_era5L_min)))
 
 
 #####################
